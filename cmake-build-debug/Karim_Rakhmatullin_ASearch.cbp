@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Karim_Rakhmatullin_ASearch"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Src\;CMake Files\Tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Karim_Rakhmatullin_ASearch">
+				<Option output="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Karim_Rakhmatullin_ASearch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 Karim_Rakhmatullin_ASearch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Karim_Rakhmatullin_ASearch/fast">
+				<Option output="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Karim_Rakhmatullin_ASearch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 Karim_Rakhmatullin_ASearch/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PPLIB">
+				<Option output="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/libPPLIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 PPLIB"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PPLIB/fast">
+				<Option output="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/libPPLIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 PPLIB/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testbench">
+				<Option output="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/testbench" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/karim/Downloads/PathPlanningProject-master/Tests/../Src"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 testbench"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testbench/fast">
+				<Option output="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/testbench" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/karim/Downloads/PathPlanningProject-master/Tests/../Src"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/x86_64-apple-darwin20"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/../../../../../../include/c++/11.2.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/11.2.0/lib/gcc/11/gcc/x86_64-apple-darwin20/11.2.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 testbench/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/config.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/config.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/environmentoptions.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/environmentoptions.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/gl_const.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/ilogger.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/main.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/map.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/map.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/mission.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/mission.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/node.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/search.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/search.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/searchresult.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/tinyxml2.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/tinyxml2.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/xmllogger.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/xmllogger.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Tests/testbench.cpp">
+			<Option target="testbench"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Src\"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

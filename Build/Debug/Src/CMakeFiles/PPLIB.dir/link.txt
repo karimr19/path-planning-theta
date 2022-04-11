@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libPPLIB.a CMakeFiles/PPLIB.dir/config.cpp.o CMakeFiles/PPLIB.dir/environmentoptions.cpp.o CMakeFiles/PPLIB.dir/map.cpp.o CMakeFiles/PPLIB.dir/mission.cpp.o CMakeFiles/PPLIB.dir/search.cpp.o CMakeFiles/PPLIB.dir/tinyxml2.cpp.o CMakeFiles/PPLIB.dir/xmllogger.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libPPLIB.a
