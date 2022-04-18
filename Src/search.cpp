@@ -28,17 +28,14 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     nodes_container[nodeHash(start_i, start_j, map)] =
             new Node(start_i, start_j, 0, calculateHeuristic(start_i, start_j, options, map),nullptr);
     OPEN.insert(nodes_container[nodeHash(start_i, start_j, map)]);
+    Node* last_node = nullptr;
     while (!OPEN.empty()) {
         ++number_of_steps;
         Node *node_to_expand = *OPEN.begin();
         OPEN.erase(OPEN.begin());
         if ((node_to_expand->i == goal_i) && (node_to_expand->j == goal_j)) {
             sresult.pathfound = true;
-            makePrimaryPath(node_to_expand);
-            auto end = std::chrono::steady_clock::now();
-            std::chrono::duration<double> executed_time = end - start;
-            sresult.time = executed_time.count();
-            sresult.pathlength = node_to_expand->g;
+            last_node = node_to_expand;
             break;
         }
         for (auto&[successor_i, successor_j, is_successor_diagonal]: getSuccessors(node_to_expand->i,
@@ -48,12 +45,18 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
         }
         CLOSED[std::make_pair(node_to_expand->i, node_to_expand->j)] = node_to_expand;
     }
+    auto end = std::chrono::steady_clock::now();
+    std::chrono::duration<double> executed_time = end - start;
+    sresult.time = executed_time.count();
     sresult.numberofsteps = number_of_steps;
     sresult.nodescreated = OPEN.size() + CLOSED.size();
     if (sresult.pathfound) {
+        makePrimaryPath(last_node);
+        sresult.pathlength = last_node->g;
         makeSecondaryPath();
         sresult.hppath = &hppath;
         sresult.lppath = &lppath;
+        outputResultsToFiles(map);
     }
     return sresult;
 }
@@ -168,7 +171,7 @@ void Search::checkSuccessorCell(Node *node_to_expand, int successor_i, int succe
 //    if (is_diagonal) {
 //        stepLength = CN_SQRT_TWO;
 //    }
-    if (node_to_expand->parent && lineOfSight(node_to_expand->parent, successor_j, successor_i, map, options)) {
+    if (node_to_expand->parent && lineOfSight(node_to_expand->parent, successor_j, successor_i, map, options.cutcorners)) {
         if (!nodes_container[successor_hash]) {
             nodes_container[successor_hash] = new Node(successor_i, successor_j, node_to_expand->parent->g +
                                                                                  distance(node_to_expand->parent->j, node_to_expand->parent->i, successor_j, successor_i),
@@ -256,109 +259,206 @@ bool raytrace(Node* first, int successor_x, int successor_y, const Map &map) {
     }
 }
 
-bool Search::lineOfSight(Node *first, int successor_x, int successor_y, const Map &map,
-                         const EnvironmentOptions &options) {
-    int x_start = first->j;
-    int y_start = first->i;
-    int difference_x = successor_x - x_start;
-    int difference_y = successor_y - y_start;
-    int step_y, step_x;
-    int f = 0;
-    if (difference_y < 0) {
-        difference_y = -difference_y;
-        step_y = -1;
-    } else {
-        step_y = 1;
+bool Search::lineOfSight(Node *first, int successor_x, int successor_y, const Map &map, bool cut_corners) {
+    int d_x = std::abs(first->j - successor_x);
+    int d_y = std::abs(first->i - successor_y);
+    int step_x = (first->j < successor_x ? 1 : -1);
+    int step_y = (first->i < successor_y ? 1 : -1);
+    int error = 0;
+    int current_y = first->i;
+    int current_x = first->j;
+    if(d_x == 0) {
+        while (current_x != successor_x) {
+            if(map.CellIsObstacle(current_y, current_x)) {
+                return false;
+            }
+            current_x += step_x;
+        }
+        return true;
+    } else if (d_y == 0) {
+        while (current_y != successor_y) {
+            if(map.CellIsObstacle(current_y, current_x)) {
+                return false;
+            }
+            current_y += step_y;
+        }
+        return true;
     }
-
-    if (difference_x < 0) {
-        difference_x = -difference_x;
-        step_x = -1;
-    } else {
-        step_x = 1;
-    }
-    bool x_changed;
-    bool y_changed;
-    if (difference_x >= difference_y) {
-        while (x_start != successor_x) {
-            y_changed = false;
-            f += difference_y;
-            if (f >= difference_x) {
-                if (!map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
+    if(cut_corners) {
+        if (d_y > d_x) {
+            while (current_y != successor_y) {
+                if (map.CellIsObstacle(current_y, current_x)) {
                     return false;
                 }
-                y_start += step_y;
-                y_changed = true;
-                f -= difference_x;
-            }
-            if ((f != 0) && !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
-                return false;
-            }
-            if ((difference_y == 0) && !map.CellIsTraversable(y_start, x_start + (step_x - 1) / 2) &&
-                !map.CellIsTraversable(y_start - 1, x_start + (step_x - 1) / 2)) {
-                return false;
-            }
-            x_start += step_x;
-            if (y_changed) {
-                if (!options.allowsqueeze) {
-                    if ((!map.CellIsTraversable(y_start - 1, x_start) &&
-                         !map.CellIsTraversable(y_start, x_start - 1)) ||
-                            (!map.CellIsTraversable(y_start - 1, x_start) &&
-                             !map.CellIsTraversable(y_start, x_start - 1))) {
+                error += d_x;
+                if ((error << 1) > d_y) {
+                    if(((error << 1) - d_x) < d_y && map.CellIsObstacle(current_y + step_y, current_x)) {
+                        return false;
+                    } else if (((error << 1) - d_x) > d_y && map.CellIsObstacle(current_y, current_x + step_x)) {
                         return false;
                     }
+                    current_x += step_x;
+                    error -= d_y;
                 }
-                if (!options.cutcorners) {
-                    if (!map.CellIsTraversable(y_start - 1, x_start) ||
-                        !map.CellIsTraversable(y_start - 1, x_start - 1) ||
-                        !map.CellIsTraversable(y_start, x_start - 1) || !map.CellIsTraversable(y_start, x_start)) {
+                current_y += step_y;
+            }
+        } else {
+            while (current_x != successor_x) {
+                if (map.CellIsObstacle(current_y, current_x)) {
+                    return false;
+                }
+                error += d_y;
+                if ((error << 1) > d_x) {
+                    if(((error << 1) - d_y) < d_x && map.CellIsObstacle(current_y, current_x + step_x)) {
+                        return false;
+                    } else if(((error << 1) - d_y) > d_x && map.CellIsObstacle(current_y + step_y, current_x)) {
                         return false;
                     }
+                    current_y += step_y;
+                    error -= d_x;
                 }
+                current_x += step_x;
             }
         }
+
     } else {
-        while (y_start != successor_y) {
-            x_changed = false;
-            f += difference_x;
-            if (f >= difference_y) {
-                if (!map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
+        int sep_value = d_x * d_x + d_y * d_y;
+        if (d_y > d_x) {
+            while (current_y != successor_y) {
+                if (map.CellIsObstacle(current_y, current_x)) {
                     return false;
                 }
-                x_start += step_x;
-                x_changed = true;
-                f -= difference_y;
+                if (map.CellIsObstacle(current_y, current_x + step_x)) {
+                    return false;
+                }
+                error += d_x;
+                if (error >= d_y) {
+                    if(((error << 1) - d_y - d_x) * ((error << 1) - d_x - d_y) < sep_value) {
+                        if(map.CellIsObstacle(current_y + step_y, current_x)) {
+                            return false;
+                        }
+                    }
+                    if((3 * d_y - ((error << 1) - d_x)) * (3 * d_y - ((error << 1) - d_x)) < sep_value) {
+                        if(map.CellIsObstacle(current_y, current_x + 2 * step_x)) {
+                            return false;
+                        }
+                    }
+                    current_x += step_x;
+                    error -= d_y;
+                }
+                current_y += step_y;
             }
-            if ((f != 0) && !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
+            if(map.CellIsObstacle(current_y, current_x)) {
                 return false;
             }
-            if ((difference_y == 0) && !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start) &&
-                !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start - 1)) {
+        } else {
+            while (current_x != successor_x) {
+                if(map.CellIsObstacle(current_y, current_x)) {
+                    return false;
+                }
+                if(map.CellIsObstacle(current_y + step_y, current_x)) {
+                    return false;
+                }
+                error += d_y;
+                if(error >= d_x) {
+                    if(((error << 1) - d_x - d_y) * ((error << 1) - d_x - d_y) < sep_value) {
+                        if(map.CellIsObstacle(current_y, current_x + step_x)) {
+                            return false;
+                        }
+                    }
+                    if((3 * d_x - ((error << 1) - d_y)) * (3 * d_x - ((error << 1) - d_y)) < sep_value) {
+                        if(map.CellIsObstacle(current_y + 2 * step_y, current_x)) {
+                            return false;
+                        }
+                    }
+                    current_y += step_y;
+                    error -= d_x;
+                }
+                current_x += step_x;
+            }
+            if(map.CellIsObstacle(current_y, current_x))
                 return false;
-            }
-            y_start += step_y;
-            if (x_changed) {
-                if (!options.allowsqueeze) {
-                    if ((!map.CellIsTraversable(y_start - 1, x_start) &&
-                         !map.CellIsTraversable(y_start, x_start - 1)) ||
-                        (!map.CellIsTraversable(y_start - 1, x_start) &&
-                         !map.CellIsTraversable(y_start, x_start - 1))) {
-                        return false;
-                    }
-                }
-                if (!options.cutcorners) {
-                    if (!map.CellIsTraversable(y_start - 1, x_start) ||
-                        !map.CellIsTraversable(y_start - 1, x_start - 1) ||
-                        !map.CellIsTraversable(y_start, x_start - 1) || !map.CellIsTraversable(y_start, x_start)) {
-                        return false;
-                    }
-                }
-            }
         }
     }
     return true;
+//    int x_start = first->current_x;
+//    int y_start = first->current_y;
+//    int difference_x = successor_x - x_start;
+//    int difference_y = successor_y - y_start;
+//    int step_y, step_x;
+//    int f = 0;
+//    if (difference_y < 0) {
+//        difference_y = -difference_y;
+//        step_y = -1;
+//    } else {
+//        step_y = 1;
+//    }
+//
+//    if (difference_x < 0) {
+//        difference_x = -difference_x;
+//        step_x = -1;
+//    } else {
+//        step_x = 1;
+//    }
+//    if (difference_x >= difference_y) {
+//        while (x_start != successor_x) {
+//            f += difference_y;
+//            if (f >= difference_x) {
+//                if (!map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
+//                    return false;
+//                }
+//                y_start += step_y;
+//                f -= difference_x;
+//            }
+//            if ((f != 0) && !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
+//                return false;
+//            }
+//            if ((difference_y == 0) && !map.CellIsTraversable(y_start, x_start + (step_x - 1) / 2) &&
+//                !map.CellIsTraversable(y_start - 1, x_start + (step_x - 1) / 2)) {
+//                return false;
+//            }
+//            x_start += step_x;
+//        }
+//    } else {
+//        while (y_start != successor_y) {
+//            f += difference_x;
+//            if (f >= difference_y) {
+//                if (!map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
+//                    return false;
+//                }
+//                x_start += step_x;
+//                f -= difference_y;
+//            }
+//            if ((f != 0) && !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start + (step_x - 1) / 2)) {
+//                return false;
+//            }
+//            if ((difference_y == 0) && !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start) &&
+//                !map.CellIsTraversable(y_start + (step_y - 1) / 2, x_start - 1)) {
+//                return false;
+//            }
+//            y_start += step_y;
+//        }
+//    }
+//    return true;
 }
 
 double Search::distance(int first_x, int first_y, int second_x, int second_y) {
     return std::sqrt(std::pow(first_x - second_x, 2) + std::pow(first_y - second_y, 2));
+}
+
+void Search::outputResultsToFiles(const Map &map) {// Вывод для проверки работы
+    std::ofstream output_stream("map.txt");
+    output_stream << map.getMapHeight() << " " << map.getMapWidth() << '\n';
+    for (int i = 0; i < map.getMapHeight(); ++i) {
+        for (int j = 0; j < map.getMapWidth() - 1; ++j) {
+            output_stream << map.getValue(i, j) << " ";
+        }
+        output_stream << map.getValue(i, map.getMapWidth() - 1) << '\n';
+    }
+    output_stream << lppath.size() << '\n';
+    for (auto node : lppath) {
+
+        output_stream << node.j << " " << node.i << '\n';
+    }
+    output_stream.close();
 }

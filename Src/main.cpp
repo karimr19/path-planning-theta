@@ -29,7 +29,8 @@ int main(int argc, char* argv[])
 
                 mission.createEnvironmentOptions();
                 mission.createSearch();
-                mission.startSearch();
+                mission.startLazyThetaSearch();
+//                mission.startSearch();
 
                 std::cout<<"Search is finished!"<<std::endl;
 

@@ -1,9 +1,6 @@
 #ifndef SEARCH_H
 #define SEARCH_H
 
-#include "ilogger.h"
-#include "searchresult.h"
-#include "environmentoptions.h"
 #include <list>
 #include <vector>
 #include <limits>
@@ -12,15 +9,12 @@
 #include <map>
 #include <set>
 #include <cmath>
-
-// Enum to make primary path.
-enum Direction {
-    NONE,
-    HORIZONTAL,
-    VERTICAL,
-    MAINDIAGONAL,
-    SIDEDIAGONAL
-};
+#include <fstream>
+#include <iostream>
+#include "ilogger.h"
+#include "searchresult.h"
+#include "environmentoptions.h"
+#include "Direction.h"
 
 class Search {
 public:
@@ -30,8 +24,9 @@ public:
 
     // Main logic of the program: starts search algorithm.
     SearchResult startSearch(ILogger *Logger, const Map &Map, const EnvironmentOptions &options);
-    static bool lineOfSight(Node *first, int successor_x, int successor_y, const Map &map,
-                            const EnvironmentOptions &options);
+//    static bool lineOfSight(Node *first, int successor_x, int successor_y, const Map &map,
+//                            const EnvironmentOptions &options);
+    static bool lineOfSight(Node *first, int successor_x, int successor_y, const Map &map, bool cut_corners);
 
 protected:
     const double kStraightStepLength = 1;
@@ -75,6 +70,8 @@ protected:
                         Direction &lastDirection);
 
     static double distance(int first_x, int first_y, int second_x, int second_y);
+
+    void outputResultsToFiles(const Map &map);
 };
 
 #endif

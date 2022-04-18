@@ -53,8 +53,8 @@ void Mission::createSearch()
 
 void Mission::startSearch()
 {
-//    Node *n = new Node(0, 0, 0, 0, nullptr);
-//    Search::lineOfSight(n, 1, 1, map);
+//    Node *n = new Node(4, 23, 0, 0, nullptr);
+//    std::cout << Search::lineOfSight(n, 14, 5, map);
 //    delete n;
     sr = search.startSearch(logger, map, options);
 }
@@ -89,5 +89,9 @@ void Mission::saveSearchResultsToLog()
 SearchResult Mission::getSearchResult()
 {
     return sr;
+}
+
+void Mission::startLazyThetaSearch() {
+    sr = lazyThetaSearch.startSearch(logger, map, options);
 }
 

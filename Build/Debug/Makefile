@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.21.3_1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/karim/Downloads/PathPlanningProject-master
+CMAKE_SOURCE_DIR = /Users/karim/Desktop/PathPlanningProject-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/karim/Downloads/PathPlanningProject-master/Build/Debug
+CMAKE_BINARY_DIR = /Users/karim/Desktop/PathPlanningProject-master/Build/Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/Build/Debug/CMakeFiles /Users/karim/Downloads/PathPlanningProject-master/Build/Debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Desktop/PathPlanningProject-master/Build/Debug/CMakeFiles /Users/karim/Desktop/PathPlanningProject-master/Build/Debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/Build/Debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Desktop/PathPlanningProject-master/Build/Debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

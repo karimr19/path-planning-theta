@@ -38,8 +38,8 @@ CMAKE_CODEBLOCKS_MAKE_ARGUMENTS:STRING=-j8
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/local/bin/g++-11
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:UNINITIALIZED=/usr/local/bin/g++-11
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler

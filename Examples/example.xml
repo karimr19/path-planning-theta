@@ -5,9 +5,9 @@
         <height>25</height>
         <cellsize>24</cellsize>
         <startx>12</startx>
-        <starty>20</starty>
-        <finishx>12</finishx>
-        <finishy>7</finishy>
+        <starty>7</starty>
+        <finishx>17</finishx>
+        <finishy>20</finishy>
         <grid>
             <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
             <row>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</row>
@@ -42,7 +42,7 @@
         <breakingties>g-max</breakingties>
         <hweight>1</hweight>
         <allowdiagonal>true</allowdiagonal>
-        <cutcorners>false</cutcorners>
+        <cutcorners>true</cutcorners>
         <allowsqueeze>true</allowsqueeze>
     </algorithm>
     <options>

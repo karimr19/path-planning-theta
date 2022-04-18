@@ -1,8 +1,8 @@
-# Install script for directory: /Users/karim/Downloads/PathPlanningProject-master/Src
+# Install script for directory: /Users/karim/Desktop/PathPlanningProject-master/Src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/karim/Downloads/PathPlanningProject-master")
+  set(CMAKE_INSTALL_PREFIX "/Users/karim/Desktop/PathPlanningProject-master")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Debug" TYPE EXECUTABLE FILES "/Users/karim/Downloads/PathPlanningProject-master/Build/Debug/Src/Karim_Rakhmatullin_ASearch")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Debug" TYPE EXECUTABLE FILES "/Users/karim/Desktop/PathPlanningProject-master/Build/Debug/Src/Karim_Rakhmatullin_ASearch")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/Karim_Rakhmatullin_ASearch" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/Karim_Rakhmatullin_ASearch")
       if(CMAKE_INSTALL_DO_STRIP)
@@ -51,7 +51,7 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Release" TYPE EXECUTABLE FILES "/Users/karim/Downloads/PathPlanningProject-master/Build/Debug/Src/Karim_Rakhmatullin_ASearch")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Release" TYPE EXECUTABLE FILES "/Users/karim/Desktop/PathPlanningProject-master/Build/Debug/Src/Karim_Rakhmatullin_ASearch")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/Karim_Rakhmatullin_ASearch" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/Karim_Rakhmatullin_ASearch")
       if(CMAKE_INSTALL_DO_STRIP)

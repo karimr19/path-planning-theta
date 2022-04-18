@@ -1,0 +1,17 @@
+//
+// Created by Karim on 18.04.2022.
+//
+
+#ifndef KARIM_RAKHMATULLIN_ASEARCH_DIRECTION_H
+#define KARIM_RAKHMATULLIN_ASEARCH_DIRECTION_H
+
+// Enum to make primary path.
+enum Direction {
+    NONE,
+    HORIZONTAL,
+    VERTICAL,
+    MAINDIAGONAL,
+    SIDEDIAGONAL
+};
+
+#endif //KARIM_RAKHMATULLIN_ASEARCH_DIRECTION_H

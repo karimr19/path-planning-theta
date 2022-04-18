@@ -252,6 +252,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Direction.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+		</Unit>
 		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/config.cpp">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
 			<Option target="PPLIB"/>

@@ -19,7 +19,7 @@ set(SOURCES         config.cpp
                     tinyxml2.cpp
                     xmllogger.cpp)
 
-add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
+add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp LazyThetaSearch.cpp LazyThetaSearch.h Direction.h)
 
 add_library(PPLIB ${HEADERS} ${SOURCES})
 

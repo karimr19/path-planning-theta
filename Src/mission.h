@@ -9,6 +9,7 @@
 #include "environmentoptions.h"
 #include "search.h"
 #include "xmllogger.h"
+#include "LazyThetaSearch.h"
 
 //That's the wrap up class that first creates all the needed objects (Map, Search etc.)
 //and then runs the search and then cleans everything up.
@@ -29,6 +30,7 @@ class Mission
         void createSearch();
         void createEnvironmentOptions();
         void startSearch();
+        void startLazyThetaSearch();
         void printSearchResultsToConsole();
         void saveSearchResultsToLog();
         SearchResult getSearchResult();
@@ -38,6 +40,7 @@ class Mission
         Config                  config;
         EnvironmentOptions      options;
         Search                  search;
+        LazyThetaSearch         lazyThetaSearch;
         ILogger*                logger;
         const char*             fileName;
         SearchResult            sr;

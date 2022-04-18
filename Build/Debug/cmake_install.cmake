@@ -1,8 +1,8 @@
-# Install script for directory: /Users/karim/Downloads/PathPlanningProject-master
+# Install script for directory: /Users/karim/Desktop/PathPlanningProject-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/karim/Downloads/PathPlanningProject-master")
+  set(CMAKE_INSTALL_PREFIX "/Users/karim/Desktop/PathPlanningProject-master")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/karim/Downloads/PathPlanningProject-master/Build/Debug/Src/cmake_install.cmake")
-  include("/Users/karim/Downloads/PathPlanningProject-master/Build/Debug/Tests/cmake_install.cmake")
+  include("/Users/karim/Desktop/PathPlanningProject-master/Build/Debug/Src/cmake_install.cmake")
+  include("/Users/karim/Desktop/PathPlanningProject-master/Build/Debug/Tests/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/karim/Downloads/PathPlanningProject-master/Build/Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/karim/Desktop/PathPlanningProject-master/Build/Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

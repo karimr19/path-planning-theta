@@ -199,6 +199,30 @@ PPLIB/fast:
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/build
 .PHONY : PPLIB/fast
 
+LazyThetaSearch.o: LazyThetaSearch.cpp.o
+.PHONY : LazyThetaSearch.o
+
+# target to build an object file
+LazyThetaSearch.cpp.o:
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.o
+.PHONY : LazyThetaSearch.cpp.o
+
+LazyThetaSearch.i: LazyThetaSearch.cpp.i
+.PHONY : LazyThetaSearch.i
+
+# target to preprocess a source file
+LazyThetaSearch.cpp.i:
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.i
+.PHONY : LazyThetaSearch.cpp.i
+
+LazyThetaSearch.s: LazyThetaSearch.cpp.s
+.PHONY : LazyThetaSearch.s
+
+# target to generate assembly for a file
+LazyThetaSearch.cpp.s:
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.s
+.PHONY : LazyThetaSearch.cpp.s
+
 config.o: config.cpp.o
 .PHONY : config.o
 
@@ -427,6 +451,9 @@ help:
 	@echo "... test"
 	@echo "... Karim_Rakhmatullin_ASearch"
 	@echo "... PPLIB"
+	@echo "... LazyThetaSearch.o"
+	@echo "... LazyThetaSearch.i"
+	@echo "... LazyThetaSearch.s"
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
