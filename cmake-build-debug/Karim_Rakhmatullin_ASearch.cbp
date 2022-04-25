@@ -252,89 +252,92 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Direction.h">
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Config.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Config.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Constants.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/EnvironmentOptions.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/EnvironmentOptions.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
 		</Unit>
 		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
 		</Unit>
 		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.h">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
 		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/config.cpp">
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Map.cpp">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
 			<Option target="PPLIB"/>
 		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/config.h">
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Map.h">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
 			<Option target="PPLIB"/>
 		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/environmentoptions.cpp">
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Mission.cpp">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
 			<Option target="PPLIB"/>
 		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/environmentoptions.h">
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Mission.h">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
 			<Option target="PPLIB"/>
 		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/gl_const.h">
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Node.h">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
 			<Option target="PPLIB"/>
 		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/ilogger.h">
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/SearchResult.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/ThetaSearch.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/ThetaSearch.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Tinyxml2.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Tinyxml2.h">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Xmllogger.cpp">
+			<Option target="Karim_Rakhmatullin_ASearch"/>
+			<Option target="PPLIB"/>
+		</Unit>
+		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/Xmllogger.h">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
 			<Option target="PPLIB"/>
 		</Unit>
 		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/main.cpp">
 			<Option target="Karim_Rakhmatullin_ASearch"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/map.cpp">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/map.h">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/mission.cpp">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/mission.h">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/node.h">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/search.cpp">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/search.h">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/searchresult.h">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/tinyxml2.cpp">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/tinyxml2.h">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/xmllogger.cpp">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
-		</Unit>
-		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Src/xmllogger.h">
-			<Option target="Karim_Rakhmatullin_ASearch"/>
-			<Option target="PPLIB"/>
 		</Unit>
 		<Unit filename="/Users/karim/Downloads/PathPlanningProject-master/Tests/testbench.cpp">
 			<Option target="testbench"/>

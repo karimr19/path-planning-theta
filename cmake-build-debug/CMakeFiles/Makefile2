@@ -116,12 +116,12 @@ Tests/clean: Tests/CMakeFiles/testbench.dir/clean
 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/all:
 	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/depend
 	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Karim_Rakhmatullin_ASearch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target Karim_Rakhmatullin_ASearch"
 .PHONY : Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/all
 
 # Build rule for subdir invocation for target.
 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 0
 .PHONY : Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule
@@ -142,12 +142,12 @@ Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/clean:
 Src/CMakeFiles/PPLIB.dir/all:
 	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/depend
 	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14,15,16,17,18 "Built target PPLIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21 "Built target PPLIB"
 .PHONY : Src/CMakeFiles/PPLIB.dir/all
 
 # Build rule for subdir invocation for target.
 Src/CMakeFiles/PPLIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/PPLIB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 0
 .PHONY : Src/CMakeFiles/PPLIB.dir/rule
@@ -168,12 +168,12 @@ Src/CMakeFiles/PPLIB.dir/clean:
 Tests/CMakeFiles/testbench.dir/all: Src/CMakeFiles/PPLIB.dir/all
 	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/testbench.dir/build.make Tests/CMakeFiles/testbench.dir/depend
 	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/testbench.dir/build.make Tests/CMakeFiles/testbench.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target testbench"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target testbench"
 .PHONY : Tests/CMakeFiles/testbench.dir/all
 
 # Build rule for subdir invocation for target.
 Tests/CMakeFiles/testbench.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tests/CMakeFiles/testbench.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 0
 .PHONY : Tests/CMakeFiles/testbench.dir/rule

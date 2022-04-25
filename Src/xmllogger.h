@@ -1,16 +1,19 @@
 #ifndef XMLLOGGER_H
 #define	XMLLOGGER_H
-#include "tinyxml2.h"
-#include "ilogger.h"
+#include "Tinyxml2.h"
+#include "Map.h"
+#include "Node.h"
+#include <unordered_map>
+#include <list>
 
 
 //That's the class that flushes the data to the output XML
 
 
-class XmlLogger : public ILogger {
+class XmlLogger {
 
 public:
-    XmlLogger(std::string loglevel):ILogger(loglevel){}
+    XmlLogger(std::string loglevel) {this->loglevel = loglevel;}
 
     virtual ~XmlLogger() {};
 
@@ -19,8 +22,6 @@ public:
     void saveLog();
 
     void writeToLogMap(const Map &Map, const std::list<Node> &path);
-
-    //void writeToLogOpenClose(const typename &OPEN, const typename &close);
 
     void writeToLogPath(const std::list<Node> &path);
 
@@ -33,6 +34,7 @@ public:
 private:
     std::string LogFileName;
     tinyxml2::XMLDocument doc;
+std::string loglevel;
 };
 
 #endif

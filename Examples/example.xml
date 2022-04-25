@@ -37,13 +37,12 @@
         </grid>
     </map>
     <algorithm>
-        <searchtype>astar</searchtype>
-        <metrictype>diagonal</metrictype>
-        <breakingties>g-max</breakingties>
-        <hweight>1</hweight>
-        <allowdiagonal>true</allowdiagonal>
-        <cutcorners>true</cutcorners>
-        <allowsqueeze>true</allowsqueeze>
+        <search_type>thetastar</search_type>
+        <metric_type>euclidean</metric_type>
+        <h_weight>1</h_weight>
+        <allow_diagonal>true</allow_diagonal>
+        <cut_corners>true</cut_corners>
+        <allow_squeeze>true</allow_squeeze>
     </algorithm>
     <options>
         <loglevel>1</loglevel>

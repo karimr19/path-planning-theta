@@ -1,4 +1,4 @@
-#include "xmllogger.h"
+#include "Xmllogger.h"
 #include <iostream>
 
 using tinyxml2::XMLElement;
@@ -124,7 +124,7 @@ void XmlLogger::writeToLogMap(const Map &map, const std::list<Node> &path)
     }
 }
 
-/*void XmlLogger::writeToLogOpenClose(const typename &OPEN, const typename &close)
+/*void XmlLogger::writeToLogOpenClose(const typename &OPEN, const typename &CLOSE)
 {
     //need to implement
     if (loglevel != CN_LP_LEVEL_FULL_WORD  && !(loglevel == CN_LP_LEVEL_MEDIUM_WORD && last))

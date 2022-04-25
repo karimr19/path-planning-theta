@@ -1,17 +1,17 @@
 #ifndef MISSION_H
 #define	MISSION_H
 
-#include "map.h"
-#include "config.h"
-#include "search.h"
-#include "ilogger.h"
-#include "searchresult.h"
-#include "environmentoptions.h"
-#include "search.h"
-#include "xmllogger.h"
+#include "Map.h"
+#include "Config.h"
+#include "ThetaSearch.h"
+#include "SearchResult.h"
+#include "EnvironmentOptions.h"
+#include "ThetaSearch.h"
+#include "Xmllogger.h"
 #include "LazyThetaSearch.h"
+#include "AStarSearch.h"
 
-//That's the wrap up class that first creates all the needed objects (Map, Search etc.)
+//That's the wrap up class that first creates all the needed objects (Map, ThetaSearch etc.)
 //and then runs the search and then cleans everything up.
 
 //Hint: Create Mission object in the main() function and then use it 1) to retreive all the data from input XML
@@ -27,10 +27,8 @@ class Mission
         bool getMap();
         bool getConfig();
         bool createLog();
-        void createSearch();
         void createEnvironmentOptions();
         void startSearch();
-        void startLazyThetaSearch();
         void printSearchResultsToConsole();
         void saveSearchResultsToLog();
         SearchResult getSearchResult();
@@ -39,11 +37,12 @@ class Mission
         Map                     map;
         Config                  config;
         EnvironmentOptions      options;
-        Search                  search;
-        LazyThetaSearch         lazyThetaSearch;
-        ILogger*                logger;
-        const char*             fileName;
-        SearchResult            sr;
+        ThetaSearch                  theta_search;
+        LazyThetaSearch         lazy_theta_search;
+        AStarSearch a_star_search;
+        XmlLogger*                logger;
+        const char*             file_name;
+        SearchResult            search_result;
 };
 
 #endif

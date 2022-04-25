@@ -1,10 +1,10 @@
-#include "config.h"
-#include "gl_const.h"
-#include "tinyxml2.h"
+#include "Config.h"
+#include "Constants.h"
+#include "Tinyxml2.h"
 #include <iostream>
 #include <sstream>
 #include <algorithm>
-#include <math.h>
+#include <cmath>
 
 Config::Config()
 {
@@ -14,15 +14,15 @@ Config::Config()
 
 Config::~Config()
 {
-    if (SearchParams) delete[] SearchParams;
-    if (LogParams) delete[] LogParams;
+    delete[] SearchParams;
+    delete[] LogParams;
 }
 
 bool Config::getConfig(const char *FileName)
 {
     std::string value;
     std::stringstream stream;
-    tinyxml2::XMLElement *root = 0, *algorithm = 0, *element = 0, *options = 0;
+    tinyxml2::XMLElement *root = nullptr, *algorithm = nullptr, *element = nullptr, *options = nullptr;
 
     tinyxml2::XMLDocument doc;
     if (doc.LoadFile(FileName) != tinyxml2::XMLError::XML_SUCCESS) {
@@ -51,22 +51,12 @@ bool Config::getConfig(const char *FileName)
         value = element->GetText();
     std::transform(value.begin(), value.end(), value.begin(), ::tolower);
 
-    if (value == CNS_SP_ST_BFS) {
-        N = 4;
-        SearchParams = new double[N];
-        SearchParams[CN_SP_ST] = CN_SP_ST_BFS;
-    }
-    else if (value == CNS_SP_ST_DIJK) {
-        N = 4;
-        SearchParams = new double[N];
-        SearchParams[CN_SP_ST] = CN_SP_ST_DIJK;
-    }
-    else if (value == CNS_SP_ST_ASTAR || value == CNS_SP_ST_JP_SEARCH || value == CNS_SP_ST_TH) {
+    if (value == CNS_SP_ST_ASTAR || value == CNS_SP_ST_LAZYTH || value == CNS_SP_ST_TH) {
         N = 7;
         SearchParams = new double[N];
         SearchParams[CN_SP_ST] = CN_SP_ST_ASTAR;
-        if (value == CNS_SP_ST_JP_SEARCH)
-            SearchParams[CN_SP_ST] = CN_SP_ST_JP_SEARCH;
+        if (value == CNS_SP_ST_LAZYTH)
+            SearchParams[CN_SP_ST] = CN_SP_ST_LAZYTH;
         else if (value == CNS_SP_ST_TH)
             SearchParams[CN_SP_ST] = CN_SP_ST_TH;
         element = algorithm->FirstChildElement(CNS_TAG_HW);
@@ -112,31 +102,12 @@ bool Config::getConfig(const char *FileName)
                 std::cout << "Warning! This type of metric is not admissible for Theta*!" << std::endl;
             }
         }
-
-
-        element = algorithm->FirstChildElement(CNS_TAG_BT);
-        if (!element) {
-            std::cout << "Warning! No '" << CNS_TAG_BT << "' tag found in XML file" << std::endl;
-            std::cout << "Value of '" << CNS_TAG_BT << "' was defined to 'g-max'" << std::endl;
-            SearchParams[CN_SP_BT] = CN_SP_BT_GMAX;
-        }
-        else {
-            value = element->GetText();
-            std::transform(value.begin(), value.end(), value.begin(), ::tolower);
-            if (value == CNS_SP_BT_GMIN) SearchParams[CN_SP_BT] = CN_SP_BT_GMIN;
-            else if (value == CNS_SP_BT_GMAX) SearchParams[CN_SP_BT] = CN_SP_BT_GMAX;
-            else {
-                std::cout << "Warning! Value of '" << CNS_TAG_BT << "' is not correctly specified." << std::endl;
-                std::cout << "Value of '" << CNS_TAG_BT << "' was defined to 'g-max'" << std::endl;
-                SearchParams[CN_SP_BT] = CN_SP_BT_GMAX;
-            }
-        }
     }
     else {
         std::cout << "Error! Value of '" << CNS_TAG_ST << "' tag (algorithm name) is not correctly specified."
                   << std::endl;
-        std::cout << "Supported algorithm's names are: '" << CNS_SP_ST_BFS << "', '" << CNS_SP_ST_DIJK << "', '"
-                  << CNS_SP_ST_ASTAR << "', '" << CNS_SP_ST_TH << "', '" << CNS_SP_ST_JP_SEARCH << "'." << std::endl;
+        std::cout << "Supported algorithm's names are: '" << CNS_SP_ST_ASTAR << "', '" << CNS_SP_ST_TH << "', '"
+                  << CNS_SP_ST_LAZYTH << "'." << std::endl;
         return false;
     }
 
@@ -265,37 +236,6 @@ bool Config::getConfig(const char *FileName)
             }
             std::cout << LogParams[CN_LP_LEVEL] << std::endl;
         }
-
-
-        element = options->FirstChildElement(CNS_TAG_LOGPATH);
-        if (!element) {
-            std::cout << "Warning! No '" << CNS_TAG_LOGPATH << "' tag found in XML file." << std::endl;
-            std::cout << "Value of '" << CNS_TAG_LOGPATH << "' tag was defined to 'current directory'." << std::endl;
-        }
-        else if (!element->GetText()) {
-            std::cout << "Warning! Value of '" << CNS_TAG_LOGPATH << "' tag is missing!" << std::endl;
-            std::cout << "Value of '" << CNS_TAG_LOGPATH << "' tag was defined to 'current directory'." << std::endl;
-        }
-        else {
-            LogParams[CN_LP_PATH] = element->GetText();
-        }
-
-
-        element = options->FirstChildElement(CNS_TAG_LOGFN);
-        if (!element) {
-            std::cout << "Warning! No '" << CNS_TAG_LOGFN << "' tag found in XML file!" << std::endl;
-            std::cout << "Value of '" << CNS_TAG_LOGFN
-                      << "' tag was defined to default (original filename +'_log' + original file extension."
-                      << std::endl;
-        }
-        else if (!element->GetText()) {
-            std::cout << "Warning! Value of '" << CNS_TAG_LOGFN << "' tag is missing." << std::endl;
-            std::cout << "Value of '" << CNS_TAG_LOGFN
-                      << "' tag was defined to default (original filename +'_log' + original file extension."
-                      << std::endl;
-        }
-        else
-            LogParams[CN_LP_NAME] = element->GetText();
     }
     return true;
 }

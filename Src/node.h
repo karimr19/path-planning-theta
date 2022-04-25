@@ -16,11 +16,20 @@ struct Node {
     Node(int i, int j, double g, double H, Node *parent) : i(i), j(j), g(g), H(H), parent(parent) {
         F = this->g + this->H;
     }
+
+    Node() {
+        i = j = F = g = H = 0;
+        parent = nullptr;
+    }
+
+    bool operator==(const Node &other) const {
+        return (i == other.i) && (j == other.j);
+    }
 };
 
 // Struct to compare nodes in the set.
 struct NodesComparator {
-    bool operator()(const Node *lhs, const Node *rhs) const {
+    bool operator()(Node *lhs, Node *rhs) const {
         return std::tie(lhs->F, lhs->i, lhs->j) < std::tie(rhs->F, rhs->i, rhs->j);
     }
 };

@@ -1,4 +1,4 @@
-#include "mission.h"
+#include "Mission.h"
 
 int main(int argc, char* argv[])
 {
@@ -6,6 +6,7 @@ int main(int argc, char* argv[])
         std::cout<<"Error! Pathfinding task file (XML) is not specified!"<<std::endl;
         return 0;
     }
+
 
     Mission mission(argv[1]);
 
@@ -23,14 +24,12 @@ int main(int argc, char* argv[])
             std::cout<<"Configurations OK!"<<std::endl<<"Creating log channel:"<<std::endl;
 
             if(!mission.createLog())
-                std::cout<<"Log chanel has not been created! Program halted!"<<std::endl;
+                std::cout<<"Log channel has not been created! Program halted!"<<std::endl;
             else {
                 std::cout<<"Log OK!"<<std::endl<<"Start searching the path:"<<std::endl;
 
                 mission.createEnvironmentOptions();
-                mission.createSearch();
-                mission.startLazyThetaSearch();
-//                mission.startSearch();
+                mission.startSearch();
 
                 std::cout<<"Search is finished!"<<std::endl;
 

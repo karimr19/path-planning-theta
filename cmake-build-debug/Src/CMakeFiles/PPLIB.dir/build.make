@@ -66,120 +66,150 @@ include Src/CMakeFiles/PPLIB.dir/progress.make
 # Include the compile flags for this target's objects.
 include Src/CMakeFiles/PPLIB.dir/flags.make
 
-Src/CMakeFiles/PPLIB.dir/config.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/config.cpp.o: ../Src/config.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Src/CMakeFiles/PPLIB.dir/config.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/config.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/config.cpp
+Src/CMakeFiles/PPLIB.dir/Config.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/Config.cpp.o: ../Src/Config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Src/CMakeFiles/PPLIB.dir/Config.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/Config.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/Config.cpp
 
-Src/CMakeFiles/PPLIB.dir/config.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/config.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/config.cpp > CMakeFiles/PPLIB.dir/config.cpp.i
+Src/CMakeFiles/PPLIB.dir/Config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/Config.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/Config.cpp > CMakeFiles/PPLIB.dir/Config.cpp.i
 
-Src/CMakeFiles/PPLIB.dir/config.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/config.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/config.cpp -o CMakeFiles/PPLIB.dir/config.cpp.s
+Src/CMakeFiles/PPLIB.dir/Config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/Config.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/Config.cpp -o CMakeFiles/PPLIB.dir/Config.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.o: ../Src/environmentoptions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/environmentoptions.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/environmentoptions.cpp
+Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o: ../Src/EnvironmentOptions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/EnvironmentOptions.cpp
 
-Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/environmentoptions.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/environmentoptions.cpp > CMakeFiles/PPLIB.dir/environmentoptions.cpp.i
+Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/EnvironmentOptions.cpp > CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.i
 
-Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/environmentoptions.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/environmentoptions.cpp -o CMakeFiles/PPLIB.dir/environmentoptions.cpp.s
+Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/EnvironmentOptions.cpp -o CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/map.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/map.cpp.o: ../Src/map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Src/CMakeFiles/PPLIB.dir/map.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/map.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/map.cpp
+Src/CMakeFiles/PPLIB.dir/Map.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/Map.cpp.o: ../Src/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Src/CMakeFiles/PPLIB.dir/Map.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/Map.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/Map.cpp
 
-Src/CMakeFiles/PPLIB.dir/map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/map.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/map.cpp > CMakeFiles/PPLIB.dir/map.cpp.i
+Src/CMakeFiles/PPLIB.dir/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/Map.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/Map.cpp > CMakeFiles/PPLIB.dir/Map.cpp.i
 
-Src/CMakeFiles/PPLIB.dir/map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/map.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/map.cpp -o CMakeFiles/PPLIB.dir/map.cpp.s
+Src/CMakeFiles/PPLIB.dir/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/Map.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/Map.cpp -o CMakeFiles/PPLIB.dir/Map.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/mission.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../Src/mission.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Src/CMakeFiles/PPLIB.dir/mission.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/mission.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/mission.cpp
+Src/CMakeFiles/PPLIB.dir/Mission.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/Mission.cpp.o: ../Src/Mission.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Src/CMakeFiles/PPLIB.dir/Mission.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/Mission.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/Mission.cpp
 
-Src/CMakeFiles/PPLIB.dir/mission.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/mission.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/mission.cpp > CMakeFiles/PPLIB.dir/mission.cpp.i
+Src/CMakeFiles/PPLIB.dir/Mission.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/Mission.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/Mission.cpp > CMakeFiles/PPLIB.dir/Mission.cpp.i
 
-Src/CMakeFiles/PPLIB.dir/mission.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/mission.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/mission.cpp -o CMakeFiles/PPLIB.dir/mission.cpp.s
+Src/CMakeFiles/PPLIB.dir/Mission.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/Mission.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/Mission.cpp -o CMakeFiles/PPLIB.dir/Mission.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/search.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/search.cpp.o: ../Src/search.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Src/CMakeFiles/PPLIB.dir/search.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/search.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/search.cpp
+Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o: ../Src/ThetaSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/ThetaSearch.cpp
 
-Src/CMakeFiles/PPLIB.dir/search.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/search.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/search.cpp > CMakeFiles/PPLIB.dir/search.cpp.i
+Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/ThetaSearch.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/ThetaSearch.cpp > CMakeFiles/PPLIB.dir/ThetaSearch.cpp.i
 
-Src/CMakeFiles/PPLIB.dir/search.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/search.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/search.cpp -o CMakeFiles/PPLIB.dir/search.cpp.s
+Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/ThetaSearch.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/ThetaSearch.cpp -o CMakeFiles/PPLIB.dir/ThetaSearch.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.o: ../Src/tinyxml2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/tinyxml2.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/tinyxml2.cpp
+Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o: ../Src/Tinyxml2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/Tinyxml2.cpp
 
-Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/tinyxml2.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/tinyxml2.cpp > CMakeFiles/PPLIB.dir/tinyxml2.cpp.i
+Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/Tinyxml2.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/Tinyxml2.cpp > CMakeFiles/PPLIB.dir/Tinyxml2.cpp.i
 
-Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/tinyxml2.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/tinyxml2.cpp -o CMakeFiles/PPLIB.dir/tinyxml2.cpp.s
+Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/Tinyxml2.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/Tinyxml2.cpp -o CMakeFiles/PPLIB.dir/Tinyxml2.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.o: ../Src/xmllogger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/xmllogger.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/xmllogger.cpp
+Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.o: ../Src/Xmllogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/Xmllogger.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/Xmllogger.cpp
 
-Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/xmllogger.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/xmllogger.cpp > CMakeFiles/PPLIB.dir/xmllogger.cpp.i
+Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/Xmllogger.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/Xmllogger.cpp > CMakeFiles/PPLIB.dir/Xmllogger.cpp.i
 
-Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/xmllogger.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/xmllogger.cpp -o CMakeFiles/PPLIB.dir/xmllogger.cpp.s
+Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/Xmllogger.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/Xmllogger.cpp -o CMakeFiles/PPLIB.dir/Xmllogger.cpp.s
+
+Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o: ../Src/LazyThetaSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp
+
+Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp > CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.i
+
+Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp -o CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.s
+
+Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
+Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o: ../Src/AStarSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/AStarSearch.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp
+
+Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/AStarSearch.cpp.i"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp > CMakeFiles/PPLIB.dir/AStarSearch.cpp.i
+
+Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/AStarSearch.cpp.s"
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp -o CMakeFiles/PPLIB.dir/AStarSearch.cpp.s
 
 # Object files for target PPLIB
 PPLIB_OBJECTS = \
-"CMakeFiles/PPLIB.dir/config.cpp.o" \
-"CMakeFiles/PPLIB.dir/environmentoptions.cpp.o" \
-"CMakeFiles/PPLIB.dir/map.cpp.o" \
-"CMakeFiles/PPLIB.dir/mission.cpp.o" \
-"CMakeFiles/PPLIB.dir/search.cpp.o" \
-"CMakeFiles/PPLIB.dir/tinyxml2.cpp.o" \
-"CMakeFiles/PPLIB.dir/xmllogger.cpp.o"
+"CMakeFiles/PPLIB.dir/Config.cpp.o" \
+"CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o" \
+"CMakeFiles/PPLIB.dir/Map.cpp.o" \
+"CMakeFiles/PPLIB.dir/Mission.cpp.o" \
+"CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o" \
+"CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o" \
+"CMakeFiles/PPLIB.dir/Xmllogger.cpp.o" \
+"CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o" \
+"CMakeFiles/PPLIB.dir/AStarSearch.cpp.o"
 
 # External object files for target PPLIB
 PPLIB_EXTERNAL_OBJECTS =
 
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/config.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/map.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/mission.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/search.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/Config.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/Map.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/Mission.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o
+Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/build.make
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libPPLIB.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libPPLIB.a"
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && $(CMAKE_COMMAND) -P CMakeFiles/PPLIB.dir/cmake_clean_target.cmake
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PPLIB.dir/link.txt --verbose=$(VERBOSE)
 

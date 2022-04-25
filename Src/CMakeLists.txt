@@ -1,25 +1,30 @@
 
-set(HEADERS         config.h
-                    environmentoptions.h
-                    gl_const.h
-                    ilogger.h
-                    map.h
-                    mission.h
-                    node.h
-                    search.h
-                    searchresult.h
-                    tinyxml2.h
-                    xmllogger.h)
+set(HEADERS
+        Config.h
+        EnvironmentOptions.h
+        Constants.h
+        Map.h
+        Mission.h
+        Node.h
+        ThetaSearch.h
+        SearchResult.h
+        Tinyxml2.h
+        Xmllogger.h
+        LazyThetaSearch.h
+        AStarSearch.h)
 
-set(SOURCES         config.cpp
-                    environmentoptions.cpp
-                    map.cpp
-                    mission.cpp
-                    search.cpp
-                    tinyxml2.cpp
-                    xmllogger.cpp)
+set(SOURCES
+        Config.cpp
+        EnvironmentOptions.cpp
+        Map.cpp
+        Mission.cpp
+        ThetaSearch.cpp
+        Tinyxml2.cpp
+        Xmllogger.cpp
+        LazyThetaSearch.cpp
+        AStarSearch.cpp)
 
-add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp LazyThetaSearch.cpp LazyThetaSearch.h Direction.h)
+add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
 
 add_library(PPLIB ${HEADERS} ${SOURCES})
 

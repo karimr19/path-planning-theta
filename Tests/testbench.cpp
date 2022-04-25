@@ -1,5 +1,5 @@
-#include "mission.h"
-#include "tinyxml2.h"
+#include "Mission.h"
+#include "Tinyxml2.h"
 #include <cassert>
 
 #define EPS 1e-5
@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
     SearchResult result = mission.getSearchResult();
 
     
-    if(abs(len - result.pathlength) > EPS)
+    if(abs(len - result.path_length) > EPS)
     {
         std::cerr<<"Incorrect path legth"<<std::endl;
         return 1;

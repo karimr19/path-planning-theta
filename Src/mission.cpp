@@ -1,97 +1,88 @@
-#include "mission.h"
+#include "Mission.h"
 #include <iostream>
 
 Mission::Mission()
 {
     logger = nullptr;
-    fileName = nullptr;
+    file_name = nullptr;
 }
 
 Mission::Mission(const char *FileName)
 {
-    fileName = FileName;
+    file_name = FileName;
     logger = nullptr;
 }
 
 Mission::~Mission()
 {
-    if (logger)
-        delete logger;
+    delete logger;
 }
 
 bool Mission::getMap()
 {
-    return map.getMap(fileName);
+    return map.getMap(file_name);
 }
 
 bool Mission::getConfig()
 {
-    return config.getConfig(fileName);
+    return config.getConfig(file_name);
 }
 
 bool Mission::createLog()
 {
-    if (logger != nullptr) delete logger;
+    delete logger;
     logger = new XmlLogger(config.LogParams[CN_LP_LEVEL]);
-    return logger->getLog(fileName, config.LogParams);
+    return logger->getLog(file_name, config.LogParams);
 }
 
 void Mission::createEnvironmentOptions()
 {
-    options.cutcorners = config.SearchParams[CN_SP_CC];
-    options.allowsqueeze = config.SearchParams[CN_SP_AS];
-    options.allowdiagonal = config.SearchParams[CN_SP_AD];
-    options.metrictype = config.SearchParams[CN_SP_MT];
-    options.searchtype = config.SearchParams[CN_SP_ST];
-    options.hweight = config.SearchParams[CN_SP_HW];
-}
-
-void Mission::createSearch()
-{
-//might be helpful in case numerous algorithms are added
+    options = EnvironmentOptions(config.SearchParams[CN_SP_AS], config.SearchParams[CN_SP_AD],
+                                 config.SearchParams[CN_SP_CC], config.SearchParams[CN_SP_MT],
+                                 config.SearchParams[CN_SP_ST], config.SearchParams[CN_SP_HW]);
 }
 
 void Mission::startSearch()
 {
-//    Node *n = new Node(4, 23, 0, 0, nullptr);
-//    std::cout << Search::lineOfSight(n, 14, 5, map);
-//    delete n;
-    sr = search.startSearch(logger, map, options);
+    if (options.search_type == 0) {
+        search_result = a_star_search.startSearch(map, options);
+    } else if (options.search_type == 1) {
+        search_result = theta_search.startSearch(map, options);
+    } else if (options.search_type == 2) {
+        search_result = lazy_theta_search.startSearch(map, options);
+    } else {
+        search_result = theta_search.startSearch(map, options);
+    }
 }
 
 void Mission::printSearchResultsToConsole()
 {
     std::cout << "Path ";
-    if (!sr.pathfound)
+    if (!search_result.path_found)
         std::cout << "NOT ";
     std::cout << "found!" << std::endl;
-    std::cout << "numberofsteps=" << sr.numberofsteps << std::endl;
-    std::cout << "nodescreated=" << sr.nodescreated << std::endl;
-    if (sr.pathfound) {
-        std::cout << "pathlength=" << sr.pathlength << std::endl;
-        std::cout << "pathlength_scaled=" << sr.pathlength * map.getCellSize() << std::endl;
+    std::cout << "number_of_steps=" << search_result.number_of_steps << std::endl;
+    std::cout << "nodes_created=" << search_result.nodes_created << std::endl;
+    if (search_result.path_found) {
+        std::cout << "path_length=" << search_result.path_length << std::endl;
+        std::cout << "pathlength_scaled=" << search_result.path_length * map.getCellSize() << std::endl;
     }
-    std::cout << "time=" << sr.time << std::endl;
+    std::cout << "time=" << search_result.time << std::endl;
 }
 
-void Mission::saveSearchResultsToLog()
-{
-    logger->writeToLogSummary(sr.numberofsteps, sr.nodescreated, sr.pathlength, sr.time, map.getCellSize());
-    if (sr.pathfound) {
-        logger->writeToLogPath(*sr.lppath);
-        logger->writeToLogHPpath(*sr.hppath);
-        logger->writeToLogMap(map, *sr.lppath);
+void Mission::saveSearchResultsToLog() {
+    logger->writeToLogSummary(search_result.number_of_steps, search_result.nodes_created, search_result.path_length,
+                              search_result.time, map.getCellSize());
+    if (search_result.path_found) {
+        logger->writeToLogPath(*search_result.primary_path);
+        logger->writeToLogHPpath(*search_result.secondary_path);
+        logger->writeToLogMap(map, *search_result.primary_path);
     } else
         logger->writeToLogNotFound();
     logger->saveLog();
 }
 
-SearchResult Mission::getSearchResult()
-{
-    return sr;
-}
-
-void Mission::startLazyThetaSearch() {
-    sr = lazyThetaSearch.startSearch(logger, map, options);
+SearchResult Mission::getSearchResult() {
+    return search_result;
 }
 

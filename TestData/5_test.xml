@@ -525,13 +525,13 @@
         </grid>
     </map>
     <algorithm>
-        <metrictype>euclid</metrictype>
-        <searchtype>astar</searchtype>
-        <hweight>1</hweight>
-        <breakingties>g-max</breakingties>
-        <allowdiagonal>0</allowdiagonal>
-        <allowsqueeze>0</allowsqueeze>
-        <cutcorners>0</cutcorners>
+        <metric_type>euclid</metric_type>
+        <search_type>thetastar</search_type>
+        <h_weight>1</h_weight>
+        <less_g_value_second>g-max</less_g_value_second>
+        <allow_diagonal>0</allow_diagonal>
+        <allow_squeeze>0</allow_squeeze>
+        <cut_corners>0</cut_corners>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>
@@ -540,7 +540,7 @@
     </options>
     <log>
         <mapfilename>../Data/5_Mazes4_eu_gmax_nad.xml</mapfilename>
-        <summary numberofsteps="28601" nodescreated="28689" length="767" length_scaled="3835" time="0.040531"/>
+        <summary number_of_steps="28601" nodes_created="28689" length="767" length_scaled="3835" time="0.040531"/>
         <path/>
         <lplevel/>
         <hplevel/>

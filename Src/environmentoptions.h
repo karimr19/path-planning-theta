@@ -1,18 +1,19 @@
 #ifndef ENVIRONMENTOPTIONS_H
 #define ENVIRONMENTOPTIONS_H
-#include "gl_const.h"
+#include "Constants.h"
 
 class EnvironmentOptions
 {
 public:
-    EnvironmentOptions(bool AS, bool AD, bool CC, int MT, int ST, double HW);
+    EnvironmentOptions(bool allow_squeeze, bool allow_diagonal, bool cut_corners, int metric_type, int search_type,
+                       double h_weight);
     EnvironmentOptions();
-    int     metrictype;     //Can be chosen Euclidean, Manhattan, Chebyshev and Diagonal distance
-    bool    allowsqueeze;   //Option that allows to move throught "bottleneck"
-    bool    allowdiagonal;  //Option that allows to make diagonal moves
-    bool    cutcorners;     //Option that allows to make diagonal moves, when one adjacent cell is untraversable
-    int     searchtype;
-    double  hweight;        // Weight of heuristic when calculating f-value.
+    int     metric_type;     //Can be chosen Euclidean, Manhattan, Chebyshev and Diagonal distance
+    bool    allow_squeeze;   //Option that allows to move throught "bottleneck"
+    bool    allow_diagonal;  //Option that allows to make diagonal moves
+    bool    cut_corners;     //Option that allows to make diagonal moves, when one adjacent cell is untraversable
+    int     search_type;
+    double  h_weight;        // Weight of heuristic when calculating f-value.
 };
 
 #endif // ENVIRONMENTOPTIONS_H
