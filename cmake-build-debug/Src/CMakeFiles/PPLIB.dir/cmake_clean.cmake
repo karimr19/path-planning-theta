@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PPLIB.dir/AStarSearch.cpp.o"
   "CMakeFiles/PPLIB.dir/Config.cpp.o"
   "CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o"
   "CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o"

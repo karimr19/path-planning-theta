@@ -6,7 +6,7 @@
         <height>512</height>
         <cellsize>5</cellsize>
         <startx>34</startx>
-        <starty>23</starty>
+        <starty>27</starty>
         <finishx>490</finishx>
         <finishy>303</finishy>
         <grid>
@@ -526,9 +526,8 @@
     </map>
     <algorithm>
         <metric_type>euclid</metric_type>
-        <search_type>thetastar</search_type>
+        <search_type>lazythetastar</search_type>
         <h_weight>1</h_weight>
-        <less_g_value_second>g-min</less_g_value_second>
         <allow_diagonal>1</allow_diagonal>
         <allow_squeeze>1</allow_squeeze>
         <cut_corners>1</cut_corners>
@@ -538,11 +537,4 @@
         <logpath/>
         <logfilename/>
     </options>
-    <log>
-        <mapfilename>../Data/6_Mazes4_eu_gmin_ad_cc_as.xml</mapfilename>
-        <summary number_of_steps="26909" nodes_created="27002" length="639.29858" length_scaled="3196.492919921875" time="0.044022"/>
-        <path/>
-        <lplevel/>
-        <hplevel/>
-    </log>
 </root>

@@ -33,7 +33,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.20/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
   "../Src/CMakeLists.txt"
-  "../Tests/CMakeLists.txt"
   "CMakeFiles/3.20.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
@@ -49,12 +48,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/DependInfo.cmake"
   "Src/CMakeFiles/PPLIB.dir/DependInfo.cmake"
-  "Tests/CMakeFiles/testbench.dir/DependInfo.cmake"
+  "Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/DependInfo.cmake"
   )

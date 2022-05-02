@@ -170,22 +170,9 @@ Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.s"
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp -o CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.s
 
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/flags.make
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o: ../Src/AStarSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp
-
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp > CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.i
-
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp -o CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.s
-
 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/flags.make
 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o: ../Src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o"
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/main.cpp
 
 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.i: cmake_force
@@ -206,7 +193,6 @@ Karim_Rakhmatullin_ASearch_OBJECTS = \
 "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Tinyxml2.cpp.o" \
 "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Xmllogger.cpp.o" \
 "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.o" \
-"CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o" \
 "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o"
 
 # External object files for target Karim_Rakhmatullin_ASearch
@@ -220,11 +206,10 @@ Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Th
 Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Tinyxml2.cpp.o
 Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Xmllogger.cpp.o
 Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.o
-Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o
 Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o
 Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make
 Src/Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Karim_Rakhmatullin_ASearch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Karim_Rakhmatullin_ASearch"
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Karim_Rakhmatullin_ASearch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

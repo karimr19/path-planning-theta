@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o"
   "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Config.cpp.o"
   "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/EnvironmentOptions.cpp.o"
   "CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.o"

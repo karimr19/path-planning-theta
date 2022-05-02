@@ -172,19 +172,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Karim_Rakhmatullin_ASearch
-
-# Build rule for target.
-Karim_Rakhmatullin_ASearch: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Karim_Rakhmatullin_ASearch
-.PHONY : Karim_Rakhmatullin_ASearch
-
-# fast build rule for target.
-Karim_Rakhmatullin_ASearch/fast:
-	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build
-.PHONY : Karim_Rakhmatullin_ASearch/fast
-
-#=============================================================================
 # Target rules for targets named PPLIB
 
 # Build rule for target.
@@ -198,17 +185,17 @@ PPLIB/fast:
 .PHONY : PPLIB/fast
 
 #=============================================================================
-# Target rules for targets named testbench
+# Target rules for targets named Karim_Rakhmatullin_theta
 
 # Build rule for target.
-testbench: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testbench
-.PHONY : testbench
+Karim_Rakhmatullin_theta: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Karim_Rakhmatullin_theta
+.PHONY : Karim_Rakhmatullin_theta
 
 # fast build rule for target.
-testbench/fast:
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/testbench.dir/build.make Tests/CMakeFiles/testbench.dir/build
-.PHONY : testbench/fast
+Karim_Rakhmatullin_theta/fast:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build
+.PHONY : Karim_Rakhmatullin_theta/fast
 
 # Help Target
 help:
@@ -223,9 +210,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... Karim_Rakhmatullin_ASearch"
+	@echo "... Karim_Rakhmatullin_theta"
 	@echo "... PPLIB"
-	@echo "... testbench"
 .PHONY : help
 
 

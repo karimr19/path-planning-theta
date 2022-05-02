@@ -170,19 +170,6 @@ Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.s"
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp -o CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o: ../Src/AStarSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/AStarSearch.cpp.o -c /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp
-
-Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/AStarSearch.cpp.i"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp > CMakeFiles/PPLIB.dir/AStarSearch.cpp.i
-
-Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/AStarSearch.cpp.s"
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && /usr/local/bin/g++-11 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.cpp -o CMakeFiles/PPLIB.dir/AStarSearch.cpp.s
-
 # Object files for target PPLIB
 PPLIB_OBJECTS = \
 "CMakeFiles/PPLIB.dir/Config.cpp.o" \
@@ -192,8 +179,7 @@ PPLIB_OBJECTS = \
 "CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o" \
 "CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o" \
 "CMakeFiles/PPLIB.dir/Xmllogger.cpp.o" \
-"CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o" \
-"CMakeFiles/PPLIB.dir/AStarSearch.cpp.o"
+"CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o"
 
 # External object files for target PPLIB
 PPLIB_EXTERNAL_OBJECTS =
@@ -206,10 +192,9 @@ Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/build.make
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libPPLIB.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libPPLIB.a"
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && $(CMAKE_COMMAND) -P CMakeFiles/PPLIB.dir/cmake_clean_target.cmake
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PPLIB.dir/link.txt --verbose=$(VERBOSE)
 

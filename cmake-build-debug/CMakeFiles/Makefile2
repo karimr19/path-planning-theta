@@ -64,25 +64,22 @@ CMAKE_BINARY_DIR = /Users/karim/Downloads/PathPlanningProject-master/cmake-build
 
 # The main recursive "all" target.
 all: Src/all
-all: Tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Src/preinstall
-preinstall: Tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: Src/clean
-clean: Tests/clean
 .PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory Src
 
 # Recursive "all" directory target.
-Src/all: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/all
 Src/all: Src/CMakeFiles/PPLIB.dir/all
+Src/all: Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/all
 .PHONY : Src/all
 
 # Recursive "preinstall" directory target.
@@ -90,50 +87,9 @@ Src/preinstall:
 .PHONY : Src/preinstall
 
 # Recursive "clean" directory target.
-Src/clean: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/clean
 Src/clean: Src/CMakeFiles/PPLIB.dir/clean
+Src/clean: Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/clean
 .PHONY : Src/clean
-
-#=============================================================================
-# Directory level rules for directory Tests
-
-# Recursive "all" directory target.
-Tests/all: Tests/CMakeFiles/testbench.dir/all
-.PHONY : Tests/all
-
-# Recursive "preinstall" directory target.
-Tests/preinstall:
-.PHONY : Tests/preinstall
-
-# Recursive "clean" directory target.
-Tests/clean: Tests/CMakeFiles/testbench.dir/clean
-.PHONY : Tests/clean
-
-#=============================================================================
-# Target rules for target Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir
-
-# All Build rule for target.
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/all:
-	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/depend
-	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target Karim_Rakhmatullin_ASearch"
-.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/all
-
-# Build rule for subdir invocation for target.
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 0
-.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule
-
-# Convenience name for target.
-Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule
-.PHONY : Karim_Rakhmatullin_ASearch
-
-# clean rule for target.
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/clean
-.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/clean
 
 #=============================================================================
 # Target rules for target Src/CMakeFiles/PPLIB.dir
@@ -142,12 +98,12 @@ Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/clean:
 Src/CMakeFiles/PPLIB.dir/all:
 	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/depend
 	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21 "Built target PPLIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19 "Built target PPLIB"
 .PHONY : Src/CMakeFiles/PPLIB.dir/all
 
 # Build rule for subdir invocation for target.
 Src/CMakeFiles/PPLIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/PPLIB.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 0
 .PHONY : Src/CMakeFiles/PPLIB.dir/rule
@@ -162,30 +118,30 @@ Src/CMakeFiles/PPLIB.dir/clean:
 .PHONY : Src/CMakeFiles/PPLIB.dir/clean
 
 #=============================================================================
-# Target rules for target Tests/CMakeFiles/testbench.dir
+# Target rules for target Src/CMakeFiles/Karim_Rakhmatullin_theta.dir
 
 # All Build rule for target.
-Tests/CMakeFiles/testbench.dir/all: Src/CMakeFiles/PPLIB.dir/all
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/testbench.dir/build.make Tests/CMakeFiles/testbench.dir/depend
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/testbench.dir/build.make Tests/CMakeFiles/testbench.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target testbench"
-.PHONY : Tests/CMakeFiles/testbench.dir/all
+Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/all:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/depend
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target Karim_Rakhmatullin_theta"
+.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/all
 
 # Build rule for subdir invocation for target.
-Tests/CMakeFiles/testbench.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Tests/CMakeFiles/testbench.dir/all
+Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/CMakeFiles 0
-.PHONY : Tests/CMakeFiles/testbench.dir/rule
+.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/rule
 
 # Convenience name for target.
-testbench: Tests/CMakeFiles/testbench.dir/rule
-.PHONY : testbench
+Karim_Rakhmatullin_theta: Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/rule
+.PHONY : Karim_Rakhmatullin_theta
 
 # clean rule for target.
-Tests/CMakeFiles/testbench.dir/clean:
-	$(MAKE) $(MAKESILENT) -f Tests/CMakeFiles/testbench.dir/build.make Tests/CMakeFiles/testbench.dir/clean
-.PHONY : Tests/CMakeFiles/testbench.dir/clean
+Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/clean
+.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

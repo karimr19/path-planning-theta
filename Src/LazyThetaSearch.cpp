@@ -28,7 +28,9 @@ SearchResult LazyThetaSearch::startSearch(const Map &map, const EnvironmentOptio
         while (it != successors.end()) {
             it->parent = parent;
             it->H = calculateHeuristic(it->i, it->j, options, map);
-            resetParent(&*it, *it->parent, map, options);
+            if (parent->parent != nullptr) {
+                resetParent(&*it, *it->parent, map, options);
+            }
             it->F = it->g + h_weight * it->H;
             insertOpen(*it);
             it++;
@@ -53,14 +55,12 @@ SearchResult LazyThetaSearch::startSearch(const Map &map, const EnvironmentOptio
 
 void LazyThetaSearch::setVertex(Node *node_to_expand, const Map &map, const EnvironmentOptions &options) {
     if (node_to_expand->parent != nullptr) {
-        if (node_to_expand->parent->parent != nullptr) {
-            if (lineOfSight(node_to_expand->parent->parent, node_to_expand, map, options)) {
-                node_to_expand->g = node_to_expand->parent->parent->g +
-                        ThetaSearch::distance(node_to_expand->i, node_to_expand->j,
-                                              node_to_expand->parent->parent->i, node_to_expand->parent->parent->j);
-                node_to_expand->parent = node_to_expand->parent->parent;
-                node_to_expand->F = node_to_expand->g + node_to_expand->H;
-            }
+        if (!lineOfSight(node_to_expand->parent, node_to_expand, map, options)) {
+            node_to_expand->parent = findParent(node_to_expand, map, options);
+            node_to_expand->g = node_to_expand->parent->g +
+                                ThetaSearch::distance(node_to_expand->parent->i, node_to_expand->parent->j,
+                                                      node_to_expand->i, node_to_expand->j);
+            node_to_expand->F = node_to_expand->g + node_to_expand->H;
         }
     }
 }
@@ -68,7 +68,6 @@ void LazyThetaSearch::setVertex(Node *node_to_expand, const Map &map, const Envi
 Node* LazyThetaSearch::findParent(Node *curNode, const Map &map, const EnvironmentOptions &options) {
     Node *newParent;
     double min_g = 1'000'000'000'000;
-    double epsilon = 0.0001;
     int adjacent_i, adjacent_j;
     for (int i = -1; i <= +1; i++) {
         for (int j = -1; j <= +1; j++) {
@@ -90,12 +89,15 @@ Node* LazyThetaSearch::findParent(Node *curNode, const Map &map, const Environme
                             continue;
                     }
                 }
-                if ((CLOSE.find((adjacent_i) * map.getMapWidth() + adjacent_j) != CLOSE.end()) &&
-                    (CLOSE[adjacent_i * map.getMapWidth() + adjacent_j].g +
-                     distance(adjacent_i, adjacent_j, curNode->i, curNode->j) - min_g < -epsilon)) {
-                    newParent = &CLOSE[adjacent_i * map.getMapWidth() + adjacent_j];
-                    min_g = CLOSE[adjacent_i * map.getMapWidth() + adjacent_j].g +
-                            distance(adjacent_i, adjacent_j, curNode->i, curNode->j);
+                if (CLOSE.find((adjacent_i) * map.getMapWidth() + adjacent_j) != CLOSE.end()) {
+                    double new_g = CLOSE[adjacent_i * map.getMapWidth() + adjacent_j].g +
+                                   distance(adjacent_i, adjacent_j, curNode->i, curNode->j);
+                    if (new_g < min_g || (new_g == min_g && newParent != nullptr &&
+                            (CLOSE[adjacent_i * map.getMapWidth() + adjacent_j].F < newParent->F))) {
+                        newParent = &CLOSE[adjacent_i * map.getMapWidth() + adjacent_j];
+                        min_g = CLOSE[adjacent_i * map.getMapWidth() + adjacent_j].g +
+                                distance(adjacent_i, adjacent_j, curNode->i, curNode->j);
+                    }
                 }
             }
         }
@@ -103,3 +105,10 @@ Node* LazyThetaSearch::findParent(Node *curNode, const Map &map, const Environme
     return newParent;
 }
 
+void LazyThetaSearch::resetParent(Node *current, Node parent, const Map &map, const EnvironmentOptions &options) {
+    double new_g = parent.parent->g + distance(parent.parent->i, parent.parent->j, current->i, current->j);
+    if (new_g < current->g) {
+        current->g = new_g;
+        current->parent = parent.parent;
+    }
+}

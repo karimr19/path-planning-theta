@@ -9,7 +9,6 @@
 #include "ThetaSearch.h"
 #include "Xmllogger.h"
 #include "LazyThetaSearch.h"
-#include "AStarSearch.h"
 
 //That's the wrap up class that first creates all the needed objects (Map, ThetaSearch etc.)
 //and then runs the search and then cleans everything up.
@@ -39,10 +38,11 @@ class Mission
         EnvironmentOptions      options;
         ThetaSearch                  theta_search;
         LazyThetaSearch         lazy_theta_search;
-        AStarSearch a_star_search;
         XmlLogger*                logger;
         const char*             file_name;
         SearchResult            search_result;
+
+    void outputResultsToFiles();
 };
 
 #endif

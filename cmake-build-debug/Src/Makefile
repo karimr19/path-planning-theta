@@ -172,20 +172,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule
-.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule
-
-# Convenience name for target.
-Karim_Rakhmatullin_ASearch: Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/rule
-.PHONY : Karim_Rakhmatullin_ASearch
-
-# fast build rule for target.
-Karim_Rakhmatullin_ASearch/fast:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build
-.PHONY : Karim_Rakhmatullin_ASearch/fast
-
-# Convenience name for target.
 Src/CMakeFiles/PPLIB.dir/rule:
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/PPLIB.dir/rule
 .PHONY : Src/CMakeFiles/PPLIB.dir/rule
@@ -199,40 +185,27 @@ PPLIB/fast:
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/build
 .PHONY : PPLIB/fast
 
-AStarSearch.o: AStarSearch.cpp.o
-.PHONY : AStarSearch.o
+# Convenience name for target.
+Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/rule:
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/rule
+.PHONY : Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/rule
 
-# target to build an object file
-AStarSearch.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.o
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.o
-.PHONY : AStarSearch.cpp.o
+# Convenience name for target.
+Karim_Rakhmatullin_theta: Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/rule
+.PHONY : Karim_Rakhmatullin_theta
 
-AStarSearch.i: AStarSearch.cpp.i
-.PHONY : AStarSearch.i
-
-# target to preprocess a source file
-AStarSearch.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.i
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.i
-.PHONY : AStarSearch.cpp.i
-
-AStarSearch.s: AStarSearch.cpp.s
-.PHONY : AStarSearch.s
-
-# target to generate assembly for a file
-AStarSearch.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/AStarSearch.cpp.s
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/AStarSearch.cpp.s
-.PHONY : AStarSearch.cpp.s
+# fast build rule for target.
+Karim_Rakhmatullin_theta/fast:
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build
+.PHONY : Karim_Rakhmatullin_theta/fast
 
 Config.o: Config.cpp.o
 .PHONY : Config.o
 
 # target to build an object file
 Config.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Config.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Config.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Config.cpp.o
 .PHONY : Config.cpp.o
 
 Config.i: Config.cpp.i
@@ -240,8 +213,8 @@ Config.i: Config.cpp.i
 
 # target to preprocess a source file
 Config.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Config.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Config.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Config.cpp.i
 .PHONY : Config.cpp.i
 
 Config.s: Config.cpp.s
@@ -249,8 +222,8 @@ Config.s: Config.cpp.s
 
 # target to generate assembly for a file
 Config.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Config.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Config.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Config.cpp.s
 .PHONY : Config.cpp.s
 
 EnvironmentOptions.o: EnvironmentOptions.cpp.o
@@ -258,8 +231,8 @@ EnvironmentOptions.o: EnvironmentOptions.cpp.o
 
 # target to build an object file
 EnvironmentOptions.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/EnvironmentOptions.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/EnvironmentOptions.cpp.o
 .PHONY : EnvironmentOptions.cpp.o
 
 EnvironmentOptions.i: EnvironmentOptions.cpp.i
@@ -267,8 +240,8 @@ EnvironmentOptions.i: EnvironmentOptions.cpp.i
 
 # target to preprocess a source file
 EnvironmentOptions.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/EnvironmentOptions.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/EnvironmentOptions.cpp.i
 .PHONY : EnvironmentOptions.cpp.i
 
 EnvironmentOptions.s: EnvironmentOptions.cpp.s
@@ -276,8 +249,8 @@ EnvironmentOptions.s: EnvironmentOptions.cpp.s
 
 # target to generate assembly for a file
 EnvironmentOptions.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/EnvironmentOptions.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/EnvironmentOptions.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/EnvironmentOptions.cpp.s
 .PHONY : EnvironmentOptions.cpp.s
 
 LazyThetaSearch.o: LazyThetaSearch.cpp.o
@@ -285,8 +258,8 @@ LazyThetaSearch.o: LazyThetaSearch.cpp.o
 
 # target to build an object file
 LazyThetaSearch.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/LazyThetaSearch.cpp.o
 .PHONY : LazyThetaSearch.cpp.o
 
 LazyThetaSearch.i: LazyThetaSearch.cpp.i
@@ -294,8 +267,8 @@ LazyThetaSearch.i: LazyThetaSearch.cpp.i
 
 # target to preprocess a source file
 LazyThetaSearch.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/LazyThetaSearch.cpp.i
 .PHONY : LazyThetaSearch.cpp.i
 
 LazyThetaSearch.s: LazyThetaSearch.cpp.s
@@ -303,8 +276,8 @@ LazyThetaSearch.s: LazyThetaSearch.cpp.s
 
 # target to generate assembly for a file
 LazyThetaSearch.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/LazyThetaSearch.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/LazyThetaSearch.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/LazyThetaSearch.cpp.s
 .PHONY : LazyThetaSearch.cpp.s
 
 Map.o: Map.cpp.o
@@ -312,8 +285,8 @@ Map.o: Map.cpp.o
 
 # target to build an object file
 Map.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Map.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Map.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Map.cpp.o
 .PHONY : Map.cpp.o
 
 Map.i: Map.cpp.i
@@ -321,8 +294,8 @@ Map.i: Map.cpp.i
 
 # target to preprocess a source file
 Map.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Map.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Map.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Map.cpp.i
 .PHONY : Map.cpp.i
 
 Map.s: Map.cpp.s
@@ -330,8 +303,8 @@ Map.s: Map.cpp.s
 
 # target to generate assembly for a file
 Map.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Map.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Map.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Map.cpp.s
 .PHONY : Map.cpp.s
 
 Mission.o: Mission.cpp.o
@@ -339,8 +312,8 @@ Mission.o: Mission.cpp.o
 
 # target to build an object file
 Mission.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Mission.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Mission.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Mission.cpp.o
 .PHONY : Mission.cpp.o
 
 Mission.i: Mission.cpp.i
@@ -348,8 +321,8 @@ Mission.i: Mission.cpp.i
 
 # target to preprocess a source file
 Mission.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Mission.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Mission.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Mission.cpp.i
 .PHONY : Mission.cpp.i
 
 Mission.s: Mission.cpp.s
@@ -357,8 +330,8 @@ Mission.s: Mission.cpp.s
 
 # target to generate assembly for a file
 Mission.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Mission.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Mission.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Mission.cpp.s
 .PHONY : Mission.cpp.s
 
 ThetaSearch.o: ThetaSearch.cpp.o
@@ -366,8 +339,8 @@ ThetaSearch.o: ThetaSearch.cpp.o
 
 # target to build an object file
 ThetaSearch.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/ThetaSearch.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/ThetaSearch.cpp.o
 .PHONY : ThetaSearch.cpp.o
 
 ThetaSearch.i: ThetaSearch.cpp.i
@@ -375,8 +348,8 @@ ThetaSearch.i: ThetaSearch.cpp.i
 
 # target to preprocess a source file
 ThetaSearch.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/ThetaSearch.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/ThetaSearch.cpp.i
 .PHONY : ThetaSearch.cpp.i
 
 ThetaSearch.s: ThetaSearch.cpp.s
@@ -384,8 +357,8 @@ ThetaSearch.s: ThetaSearch.cpp.s
 
 # target to generate assembly for a file
 ThetaSearch.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/ThetaSearch.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/ThetaSearch.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/ThetaSearch.cpp.s
 .PHONY : ThetaSearch.cpp.s
 
 Tinyxml2.o: Tinyxml2.cpp.o
@@ -393,8 +366,8 @@ Tinyxml2.o: Tinyxml2.cpp.o
 
 # target to build an object file
 Tinyxml2.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Tinyxml2.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Tinyxml2.cpp.o
 .PHONY : Tinyxml2.cpp.o
 
 Tinyxml2.i: Tinyxml2.cpp.i
@@ -402,8 +375,8 @@ Tinyxml2.i: Tinyxml2.cpp.i
 
 # target to preprocess a source file
 Tinyxml2.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Tinyxml2.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Tinyxml2.cpp.i
 .PHONY : Tinyxml2.cpp.i
 
 Tinyxml2.s: Tinyxml2.cpp.s
@@ -411,8 +384,8 @@ Tinyxml2.s: Tinyxml2.cpp.s
 
 # target to generate assembly for a file
 Tinyxml2.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Tinyxml2.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Tinyxml2.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Tinyxml2.cpp.s
 .PHONY : Tinyxml2.cpp.s
 
 Xmllogger.o: Xmllogger.cpp.o
@@ -420,8 +393,8 @@ Xmllogger.o: Xmllogger.cpp.o
 
 # target to build an object file
 Xmllogger.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Xmllogger.cpp.o
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Xmllogger.cpp.o
 .PHONY : Xmllogger.cpp.o
 
 Xmllogger.i: Xmllogger.cpp.i
@@ -429,8 +402,8 @@ Xmllogger.i: Xmllogger.cpp.i
 
 # target to preprocess a source file
 Xmllogger.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Xmllogger.cpp.i
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Xmllogger.cpp.i
 .PHONY : Xmllogger.cpp.i
 
 Xmllogger.s: Xmllogger.cpp.s
@@ -438,8 +411,8 @@ Xmllogger.s: Xmllogger.cpp.s
 
 # target to generate assembly for a file
 Xmllogger.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/Xmllogger.cpp.s
 	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/Xmllogger.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/Xmllogger.cpp.s
 .PHONY : Xmllogger.cpp.s
 
 main.o: main.cpp.o
@@ -447,7 +420,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.o
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -455,7 +428,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.i
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -463,7 +436,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_ASearch.dir/main.cpp.s
+	cd /Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/build.make Src/CMakeFiles/Karim_Rakhmatullin_theta.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -479,11 +452,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... Karim_Rakhmatullin_ASearch"
+	@echo "... Karim_Rakhmatullin_theta"
 	@echo "... PPLIB"
-	@echo "... AStarSearch.o"
-	@echo "... AStarSearch.i"
-	@echo "... AStarSearch.s"
 	@echo "... Config.o"
 	@echo "... Config.i"
 	@echo "... Config.s"

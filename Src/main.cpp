@@ -7,9 +7,7 @@ int main(int argc, char* argv[])
         return 0;
     }
 
-
     Mission mission(argv[1]);
-
     std::cout<<argv[1]<<std::endl;
     std::cout<<"Parsing the map from XML:"<<std::endl;
 
@@ -35,7 +33,6 @@ int main(int argc, char* argv[])
 
                 mission.printSearchResultsToConsole();
                 mission.saveSearchResultsToLog();
-
                 std::cout<<"Results are saved (if chosen) via created log channel."<<std::endl;
             }
         }

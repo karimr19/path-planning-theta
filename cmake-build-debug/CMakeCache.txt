@@ -165,7 +165,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Karim_Rakhmatullin_ASearch
+CMAKE_PROJECT_NAME:STATIC=Karim_Rakhmatullin_theta
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -234,6 +234,12 @@ Karim_Rakhmatullin_ASearch_BINARY_DIR:STATIC=/Users/karim/Downloads/PathPlanning
 
 //Value Computed by CMake
 Karim_Rakhmatullin_ASearch_SOURCE_DIR:STATIC=/Users/karim/Downloads/PathPlanningProject-master
+
+//Value Computed by CMake
+Karim_Rakhmatullin_theta_BINARY_DIR:STATIC=/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug
+
+//Value Computed by CMake
+Karim_Rakhmatullin_theta_SOURCE_DIR:STATIC=/Users/karim/Downloads/PathPlanningProject-master
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
@@ -347,7 +353,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -22,9 +22,11 @@ public:
     // Main logic of the program: starts search algorithm.
     SearchResult startSearch(const Map &Map, const EnvironmentOptions &options) override;
 
+
 private:
     Node* findParent(Node *curNode, const Map &map, const EnvironmentOptions &options);
-    static void setVertex(Node* node_to_expand, const Map &map, const EnvironmentOptions &options);
+    void setVertex(Node* node_to_expand, const Map &map, const EnvironmentOptions &options);
+    void resetParent(Node *current, Node parent, const Map &map, const EnvironmentOptions &options) override;
 };
 
 

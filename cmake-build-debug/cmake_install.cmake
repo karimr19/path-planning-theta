@@ -40,7 +40,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Src/cmake_install.cmake")
-  include("/Users/karim/Downloads/PathPlanningProject-master/cmake-build-debug/Tests/cmake_install.cmake")
 
 endif()
 

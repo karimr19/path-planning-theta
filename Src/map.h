@@ -28,6 +28,7 @@ private:
     int goal_i;
     int goal_j;
     int width;
+    int agent_radius_in_cells;
 
 public:
     Map();
@@ -45,6 +46,24 @@ public:
     int getStartJ() const;
     int getGoalI() const;
     int getGoalJ() const;
+    bool isLeftUpperCorner(int i, int j);
+    bool isRightUpperCorner(int i, int j);
+    bool isLeftDownCorner(int i, int j);
+    bool isRightDownCorner(int i, int j);
+    bool isLeftTop(int i, int j);
+    bool isRightTop(int i, int j);
+    bool isUpperTop(int i, int j);
+    bool isDownTop(int i, int j);
+    bool isAloneObstacle(int i, int j);
+    bool isLeftAndRightNotObstacle(int i, int j);
+    bool isUpAndDownNotObstacle(int i, int j);
+    bool isLeftNotObstacle(int i, int j);
+    bool isUpNotObstacle(int i, int j);
+    bool isRightNotObstacle(int i, int j);
+    bool isDownNotObstacle(int i, int j);
+    void expandObstacles(int begin_i, int begin_j, int end_i, int end_j);
+
+    void expandObstacles();
 };
 
 #endif

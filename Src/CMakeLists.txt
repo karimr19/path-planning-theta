@@ -10,8 +10,7 @@ set(HEADERS
         SearchResult.h
         Tinyxml2.h
         Xmllogger.h
-        LazyThetaSearch.h
-        AStarSearch.h)
+        LazyThetaSearch.h)
 
 set(SOURCES
         Config.cpp
@@ -21,8 +20,7 @@ set(SOURCES
         ThetaSearch.cpp
         Tinyxml2.cpp
         Xmllogger.cpp
-        LazyThetaSearch.cpp
-        AStarSearch.cpp)
+        LazyThetaSearch.cpp)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
 

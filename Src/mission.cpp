@@ -44,19 +44,29 @@ void Mission::createEnvironmentOptions()
 
 void Mission::startSearch()
 {
-    if (options.search_type == 0) {
-        search_result = a_star_search.startSearch(map, options);
-    } else if (options.search_type == 1) {
-        search_result = theta_search.startSearch(map, options);
-    } else if (options.search_type == 2) {
-        search_result = lazy_theta_search.startSearch(map, options);
-    } else {
-        search_result = theta_search.startSearch(map, options);
-    }
+//    search_result = lazy_theta_search.startSearch(map, options);
+    theta_search.setIsAstar(false);
+    search_result = theta_search.startSearch(map, options);
+//    if (options.search_type == 0) {
+//        theta_search.setIsAstar(true);
+//        search_result = theta_search.startSearch(map, options);
+//    } else if (options.search_type == 1) {
+//        theta_search.setIsAstar(false);
+//        search_result = theta_search.startSearch(map, options);
+//    } else if (options.search_type == 2) {
+//        search_result = lazy_theta_search.startSearch(map, options);
+//    } else {
+//        theta_search.setIsAstar(false);
+//        search_result = theta_search.startSearch(map, options);
+//    }
 }
 
 void Mission::printSearchResultsToConsole()
 {
+    if (!(config.LogParams[CN_LP_LEVEL] == CN_LP_LEVEL_NOPE_WORD ||
+        config.LogParams[CN_LP_LEVEL] == CN_LP_LEVEL_TINY_WORD)) {
+        outputResultsToFiles();
+    }
     std::cout << "Path ";
     if (!search_result.path_found)
         std::cout << "NOT ";
@@ -86,3 +96,18 @@ SearchResult Mission::getSearchResult() {
     return search_result;
 }
 
+void Mission::outputResultsToFiles() {// Вывод для проверки работы
+    std::ofstream output_stream("map.txt");
+    output_stream << map.getMapHeight() << " " << map.getMapWidth() << '\n';
+    for (int i = 0; i < map.getMapHeight(); ++i) {
+        for (int j = 0; j < map.getMapWidth() - 1; ++j) {
+            output_stream << map.getValue(i, j) << " ";
+        }
+        output_stream << map.getValue(i, map.getMapWidth() - 1) << '\n';
+    }
+    output_stream << search_result.secondary_path->size() << '\n';
+    for (auto node: *search_result.secondary_path) {
+        output_stream << node.j << " " << node.i << '\n';
+    }
+    output_stream.close();
+}

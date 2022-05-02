@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2)
-set(PROJECT_NAME "Karim_Rakhmatullin_ASearch")
+set(PROJECT_NAME "Karim_Rakhmatullin_theta")
 project(${PROJECT_NAME})
 
 
@@ -14,4 +14,3 @@ set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
 enable_testing()
 
 add_subdirectory(Src)
-add_subdirectory(Tests)

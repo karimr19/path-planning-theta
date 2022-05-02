@@ -40,7 +40,9 @@ SearchResult ThetaSearch::startSearch(const Map &map, const EnvironmentOptions &
         while (it != successors.end()) {
             it->parent = parent;
             it->H = calculateHeuristic(it->i, it->j, options, map);
-            resetParent(&*it, *it->parent, map, options);
+            if (!is_astar) {
+                resetParent(&*it, *it->parent, map, options);
+            }
             it->F = it->g + h_weight * it->H;
             insertOpen(*it);
             it++;
@@ -90,11 +92,11 @@ std::list<Node> ThetaSearch::getSuccessors(Node node_to_expand, const Map &map, 
                     // Checks if it is diagonal step.
                     if ((i + j) % 2 == 0) {
                         if (options.allow_diagonal) {
-                            if (map.getValue(cell_i + i, cell_j) && map.getValue(cell_i, cell_j + j)) {
+                            if (map.getValue(cell_i + i, cell_j) != 0 && map.getValue(cell_i, cell_j + j) != 0) {
                                 if (!options.allow_squeeze) {
                                     continue;
                                 }
-                            } else if (map.getValue(cell_i + i, cell_j) || map.getValue(cell_i, cell_j + j)) {
+                            } else if (map.getValue(cell_i + i, cell_j) != 0 || map.getValue(cell_i, cell_j + j) != 0) {
                                 if (!options.cut_corners) {
                                     continue;
                                 }
@@ -109,7 +111,7 @@ std::list<Node> ThetaSearch::getSuccessors(Node node_to_expand, const Map &map, 
                         if (i == 0 || j == 0) {
                             newNode.g = node_to_expand.g + 1;
                         } else {
-                            newNode.g = node_to_expand.g + CN_SQRT_TWO;
+                            newNode.g = node_to_expand.g + std::sqrt(2);
                         }
                         successors.push_front(newNode);
                     }
@@ -161,9 +163,9 @@ void ThetaSearch::insertOpen(Node new_node) {
     bool position_found = false;
     double epsilon = 0.0001;
     for (auto it = OPEN[new_node.i].begin(); it != OPEN[new_node.i].end(); ++it) {
-        if (!position_found && (it->F - new_node.F >= epsilon)) {
-            if (std::abs(it->F - new_node.F) < epsilon) {
-                if (new_node.g - it->g >= -epsilon) {
+        if (!position_found && (it->F >= new_node.F)) {
+            if (it->F == new_node.F) {
+                if (new_node.g >= it->g) {
                     insert_position = it;
                     position_found = true;
                 }
@@ -173,7 +175,7 @@ void ThetaSearch::insertOpen(Node new_node) {
             }
         }
         if (it->j == new_node.j) {
-            if (new_node.F - it->F >= -epsilon)
+            if (new_node.F >= it->F)
                 return;
             else {
                 if (insert_position == it) {
@@ -362,4 +364,8 @@ bool ThetaSearch::nodeIsFinish(Node *node, const Map &map) {
 
 uint64_t ThetaSearch::nodeHash(int i, int j, const Map &map) {
     return i * map.getMapWidth() + static_cast<uint64_t>(j);
+}
+
+void ThetaSearch::setIsAstar(bool astar) {
+    this->is_astar = astar;
 }

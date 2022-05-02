@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.h
-set
--
-map
--
-unordered_map
--
-cmath
--
-fstream
--
-chrono
--
-SearchResult.h
-/Users/karim/Downloads/PathPlanningProject-master/Src/SearchResult.h
-EnvironmentOptions.h
-/Users/karim/Downloads/PathPlanningProject-master/Src/EnvironmentOptions.h
-Map.h
-/Users/karim/Downloads/PathPlanningProject-master/Src/Map.h
-
 /Users/karim/Downloads/PathPlanningProject-master/Src/Config.h
 string
 -
@@ -35,6 +15,10 @@ string
 /Users/karim/Downloads/PathPlanningProject-master/Src/EnvironmentOptions.h
 Constants.h
 /Users/karim/Downloads/PathPlanningProject-master/Src/Constants.h
+
+/Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.cpp
+LazyThetaSearch.h
+/Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.h
 
 /Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.h
 vector
@@ -52,6 +36,10 @@ iostream
 ThetaSearch.h
 /Users/karim/Downloads/PathPlanningProject-master/Src/ThetaSearch.h
 
+/Users/karim/Downloads/PathPlanningProject-master/Src/Map.cpp
+Map.h
+/Users/karim/Downloads/PathPlanningProject-master/Src/Map.h
+
 /Users/karim/Downloads/PathPlanningProject-master/Src/Map.h
 iostream
 -
@@ -67,12 +55,6 @@ algorithm
 -
 Tinyxml2.h
 /Users/karim/Downloads/PathPlanningProject-master/Src/Tinyxml2.h
-
-/Users/karim/Downloads/PathPlanningProject-master/Src/Mission.cpp
-Mission.h
-/Users/karim/Downloads/PathPlanningProject-master/Src/Mission.h
-iostream
--
 
 /Users/karim/Downloads/PathPlanningProject-master/Src/Mission.h
 Map.h
@@ -91,8 +73,6 @@ Xmllogger.h
 /Users/karim/Downloads/PathPlanningProject-master/Src/Xmllogger.h
 LazyThetaSearch.h
 /Users/karim/Downloads/PathPlanningProject-master/Src/LazyThetaSearch.h
-AStarSearch.h
-/Users/karim/Downloads/PathPlanningProject-master/Src/AStarSearch.h
 
 /Users/karim/Downloads/PathPlanningProject-master/Src/Node.h
 tuple
