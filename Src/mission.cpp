@@ -44,28 +44,25 @@ void Mission::createEnvironmentOptions()
 
 void Mission::startSearch()
 {
-//    search_result = lazy_theta_search.startSearch(map, options);
-    theta_search.setIsAstar(false);
-    search_result = theta_search.startSearch(map, options);
-//    if (options.search_type == 0) {
-//        theta_search.setIsAstar(true);
-//        search_result = theta_search.startSearch(map, options);
-//    } else if (options.search_type == 1) {
-//        theta_search.setIsAstar(false);
-//        search_result = theta_search.startSearch(map, options);
-//    } else if (options.search_type == 2) {
-//        search_result = lazy_theta_search.startSearch(map, options);
-//    } else {
-//        theta_search.setIsAstar(false);
-//        search_result = theta_search.startSearch(map, options);
-//    }
+    if (options.search_type == 0) {
+        theta_search.setIsAstar(true);
+        search_result = theta_search.startSearch(map, options);
+    } else if (options.search_type == 1) {
+        theta_search.setIsAstar(false);
+        search_result = theta_search.startSearch(map, options);
+    } else if (options.search_type == 2) {
+        search_result = lazy_theta_search.startSearch(map, options);
+    } else {
+        theta_search.setIsAstar(false);
+        search_result = theta_search.startSearch(map, options);
+    }
 }
 
 void Mission::printSearchResultsToConsole()
 {
     if (!(config.LogParams[CN_LP_LEVEL] == CN_LP_LEVEL_NOPE_WORD ||
         config.LogParams[CN_LP_LEVEL] == CN_LP_LEVEL_TINY_WORD)) {
-        outputResultsToFiles();
+        outputResultsToFile();
     }
     std::cout << "Path ";
     if (!search_result.path_found)
@@ -92,11 +89,7 @@ void Mission::saveSearchResultsToLog() {
     logger->saveLog();
 }
 
-SearchResult Mission::getSearchResult() {
-    return search_result;
-}
-
-void Mission::outputResultsToFiles() {// Вывод для проверки работы
+void Mission::outputResultsToFile() {// Вывод для проверки работы
     std::ofstream output_stream("map.txt");
     output_stream << map.getMapHeight() << " " << map.getMapWidth() << '\n';
     for (int i = 0; i < map.getMapHeight(); ++i) {

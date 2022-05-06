@@ -20,15 +20,15 @@ Map::~Map() {
     }
 }
 
-bool Map::CellIsTraversable(int i, int j) const {
+bool Map::cellIsTraversable(int i, int j) const {
     return (Grid[i][j] == CN_GC_NOOBS);
 }
 
-bool Map::CellIsObstacle(int i, int j) const {
+bool Map::cellIsObstacle(int i, int j) const {
     return (Grid[i][j] != CN_GC_NOOBS);
 }
 
-bool Map::CellOnGrid(int i, int j) const {
+bool Map::cellOnGrid(int i, int j) const {
     return (i < height && i >= 0 && j < width && j >= 0);
 }
 

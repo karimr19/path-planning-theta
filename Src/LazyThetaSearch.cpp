@@ -46,7 +46,7 @@ SearchResult LazyThetaSearch::startSearch(const Map &map, const EnvironmentOptio
     search_result.time = executed_time.count();
     if (search_result.path_found) {
         makeSecondaryPath();
-//        outputResultsToFiles(map);
+//        outputResultsToFile(map);
     }
     search_result.secondary_path = &secondary_path;
     search_result.primary_path = &primary_path;
@@ -73,19 +73,19 @@ Node* LazyThetaSearch::findParent(Node *curNode, const Map &map, const Environme
         for (int j = -1; j <= +1; j++) {
             adjacent_i = curNode->i + i;
             adjacent_j = curNode->j + j;
-            if ((i != 0 || j != 0) && map.CellOnGrid(adjacent_i, adjacent_j) &&
-                (map.CellIsTraversable(adjacent_i, adjacent_j))) {
+            if ((i != 0 || j != 0) && map.cellOnGrid(adjacent_i, adjacent_j) &&
+                (map.cellIsTraversable(adjacent_i, adjacent_j))) {
                 if (i != 0 && j != 0) {
                     if (!options.allow_diagonal)
                         continue;
                     else if (!options.cut_corners) {
-                        if (map.CellIsObstacle(curNode->i, adjacent_j) ||
-                            map.CellIsObstacle(adjacent_i, curNode->j))
+                        if (map.cellIsObstacle(curNode->i, adjacent_j) ||
+                            map.cellIsObstacle(adjacent_i, curNode->j))
                             continue;
                     }
                     else if (!options.allow_squeeze) {
-                        if (map.CellIsObstacle(curNode->i, adjacent_j) &&
-                            map.CellIsObstacle(adjacent_i, curNode->j))
+                        if (map.cellIsObstacle(curNode->i, adjacent_j) &&
+                            map.cellIsObstacle(adjacent_i, curNode->j))
                             continue;
                     }
                 }

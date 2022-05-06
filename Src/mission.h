@@ -30,7 +30,6 @@ class Mission
         void startSearch();
         void printSearchResultsToConsole();
         void saveSearchResultsToLog();
-        SearchResult getSearchResult();
         
     private:
         Map                     map;
@@ -42,7 +41,7 @@ class Mission
         const char*             file_name;
         SearchResult            search_result;
 
-    void outputResultsToFiles();
+    void outputResultsToFile();
 };
 
 #endif

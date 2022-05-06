@@ -18,7 +18,6 @@ public:
     ~ThetaSearch();
 
     virtual SearchResult startSearch(const Map &Map, const EnvironmentOptions &options);
-    void outputResultsToFiles(const Map &map);
 
     static bool lineOfSight(Node *first, Node* second, const Map &map, const EnvironmentOptions &options);
     static double distance(int i1, int j1, int i2, int j2);

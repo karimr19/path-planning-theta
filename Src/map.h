@@ -35,9 +35,9 @@ public:
     ~Map();
 
     bool getMap(const char *FileName);
-    bool CellIsTraversable (int i, int j) const;
-    bool CellOnGrid (int i, int j) const;
-    bool CellIsObstacle(int i, int j) const;
+    bool cellIsTraversable (int i, int j) const;
+    bool cellOnGrid (int i, int j) const;
+    bool cellIsObstacle(int i, int j) const;
     int  getValue(int i, int j) const;
     int getMapHeight() const;
     int getMapWidth() const;

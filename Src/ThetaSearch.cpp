@@ -58,7 +58,7 @@ SearchResult ThetaSearch::startSearch(const Map &map, const EnvironmentOptions &
     search_result.time = executed_time.count();
     if (search_result.path_found) {
         makeSecondaryPath();
-//        outputResultsToFiles(map);
+//        outputResultsToFile(map);
     }
     search_result.secondary_path = &secondary_path;
     search_result.primary_path = &primary_path;
@@ -194,22 +194,6 @@ void ThetaSearch::insertOpen(Node new_node) {
     OPEN[new_node.i].insert(insert_position, new_node);
 }
 
-void ThetaSearch::outputResultsToFiles(const Map &map) {// Вывод для проверки работы
-    std::ofstream output_stream("map.txt");
-    output_stream << map.getMapHeight() << " " << map.getMapWidth() << '\n';
-    for (int i = 0; i < map.getMapHeight(); ++i) {
-        for (int j = 0; j <= map.getMapWidth(); ++j) {
-            output_stream << map.getValue(i, j) << " ";
-        }
-        output_stream << map.getValue(i, map.getMapWidth() - 1) << '\n';
-    }
-    output_stream << secondary_path.size() << '\n';
-    for (auto node: secondary_path) {
-        output_stream << node.j << " " << node.i << '\n';
-    }
-    output_stream.close();
-}
-
 bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const EnvironmentOptions &options) {
     int d_i = std::abs(first->i - second->i);
     int d_j = std::abs(first->j - second->j);
@@ -226,7 +210,7 @@ bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const E
     int current_j = first->j;
     if (d_i == 0) {
         while (current_j != second->j) {
-            if (map.CellIsObstacle(current_i, current_j)) {
+            if (map.cellIsObstacle(current_i, current_j)) {
                 return false;
             }
             current_j += step_j;
@@ -234,7 +218,7 @@ bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const E
         return true;
     } else if (d_j == 0) {
         while (current_i != second->i) {
-            if (map.CellIsObstacle(current_i, current_j)) {
+            if (map.cellIsObstacle(current_i, current_j)) {
                 return false;
             }
             current_i += step_i;
@@ -244,13 +228,13 @@ bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const E
     if (options.cut_corners) {
         if (d_i > d_j) {
             while (current_i != second->i) {
-                if (map.CellIsObstacle(current_i, current_j)) {
+                if (map.cellIsObstacle(current_i, current_j)) {
                     return false;
                 }
                 error += d_j;
                 if ((error << 1) > d_i) {
-                    if (((((error << 1) - d_j) < d_i) && map.CellIsObstacle(current_i + step_i, current_j)) ||
-                        ((((error << 1) - d_j) > d_i) && map.CellIsObstacle(current_i, current_j + step_j))) {
+                    if (((((error << 1) - d_j) < d_i) && map.cellIsObstacle(current_i + step_i, current_j)) ||
+                        ((((error << 1) - d_j) > d_i) && map.cellIsObstacle(current_i, current_j + step_j))) {
                         return false;
                     }
                     current_j += step_j;
@@ -260,13 +244,13 @@ bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const E
             }
         } else {
             while (current_j != second->j) {
-                if (map.CellIsObstacle(current_i, current_j)) {
+                if (map.cellIsObstacle(current_i, current_j)) {
                     return false;
                 }
                 error += d_i;
                 if ((error << 1) > d_j) {
-                    if (((((error << 1) - d_i) < d_j) && map.CellIsObstacle(current_i, current_j + step_j)) ||
-                        (((error << 1) - d_i) > d_j && map.CellIsObstacle(current_i + step_i, current_j))) {
+                    if (((((error << 1) - d_i) < d_j) && map.cellIsObstacle(current_i, current_j + step_j)) ||
+                        (((error << 1) - d_i) > d_j && map.cellIsObstacle(current_i + step_i, current_j))) {
                         return false;
                     }
                     current_i += step_i;
@@ -279,17 +263,17 @@ bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const E
         int sep_value = d_i * d_i + d_j * d_j;
         if (d_i > d_j) {
             while (current_i != second->i) {
-                if (map.CellIsObstacle(current_i, current_j) || map.CellIsObstacle(current_i, current_j + step_j)) {
+                if (map.cellIsObstacle(current_i, current_j) || map.cellIsObstacle(current_i, current_j + step_j)) {
                     return false;
                 }
                 error += d_j;
                 if (error >= d_i) {
                     if ((((error << 1) - d_i - d_j) * ((error << 1) - d_i - d_j) < sep_value) &&
-                        (map.CellIsObstacle(current_i + step_i, current_j))) {
+                        (map.cellIsObstacle(current_i + step_i, current_j))) {
                         return false;
                     }
                     if (((3 * d_i - ((error << 1) - d_j)) * (3 * d_i - ((error << 1) - d_j)) < sep_value) &&
-                        (map.CellIsObstacle(current_i, current_j + 2 * step_j))) {
+                        (map.cellIsObstacle(current_i, current_j + 2 * step_j))) {
                         return false;
                     }
                     current_j += step_j;
@@ -297,22 +281,22 @@ bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const E
                 }
                 current_i += step_i;
             }
-            if (map.CellIsObstacle(current_i, current_j)) {
+            if (map.cellIsObstacle(current_i, current_j)) {
                 return false;
             }
         } else {
             while (current_j != second->j) {
-                if (map.CellIsObstacle(current_i, current_j) || map.CellIsObstacle(current_i + step_i, current_j)) {
+                if (map.cellIsObstacle(current_i, current_j) || map.cellIsObstacle(current_i + step_i, current_j)) {
                     return false;
                 }
                 error += d_i;
                 if (error >= d_j) {
                     if ((((error << 1) - d_i - d_j) * ((error << 1) - d_i - d_j) < sep_value) &&
-                        (map.CellIsObstacle(current_i, current_j + step_j))) {
+                        (map.cellIsObstacle(current_i, current_j + step_j))) {
                         return false;
                     }
                     if (((3 * d_j - ((error << 1) - d_i)) * (3 * d_j - ((error << 1) - d_i)) < sep_value) &&
-                        map.CellIsObstacle(current_i + 2 * step_i, current_j)) {
+                            map.cellIsObstacle(current_i + 2 * step_i, current_j)) {
                         return false;
                     }
                     current_i += step_i;
@@ -320,7 +304,7 @@ bool ThetaSearch::lineOfSight(Node *first, Node *second, const Map &map, const E
                 }
                 current_j += step_j;
             }
-            if (map.CellIsObstacle(current_i, current_j)) {
+            if (map.cellIsObstacle(current_i, current_j)) {
                 return false;
             }
         }
