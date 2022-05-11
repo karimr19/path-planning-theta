@@ -8,8 +8,7 @@ int main(int argc, char* argv[])
     }
 
     Mission mission(argv[1]);
-    std::cout<<argv[1]<<std::endl;
-    std::cout<<"Parsing the map from XML:"<<std::endl;
+    std::cout<<"Parsing the map from: " << argv[1]<< std::endl;
 
     if(!mission.getMap()) {
         std::cout<<"Incorrect map! Program halted!"<<std::endl;

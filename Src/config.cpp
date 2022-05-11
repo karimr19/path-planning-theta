@@ -98,7 +98,8 @@ bool Config::getConfig(const char *FileName)
                 std::cout << "Value of '" << CNS_TAG_MT << "' was defined to 'euclidean'" << std::endl;
                 SearchParams[CN_SP_MT] = CN_SP_MT_EUCL;
             }
-            if (SearchParams[CN_SP_ST] == CN_SP_ST_TH && SearchParams[CN_SP_MT] != CN_SP_MT_EUCL) {
+            if ((SearchParams[CN_SP_ST] == CN_SP_ST_TH || SearchParams[CN_SP_ST] == CN_SP_ST_LAZYTH)
+                && SearchParams[CN_SP_MT] != CN_SP_MT_EUCL) {
                 std::cout << "Warning! This type of metric is not admissible for Theta*!" << std::endl;
             }
         }

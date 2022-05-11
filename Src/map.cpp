@@ -87,13 +87,13 @@ bool Map::getMap(const char *FileName) {
         if (value == CNS_TAG_HEIGHT) {
             if (hasHeight) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_HEIGHT << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_HEIGHT << "' =" << height << "will be used."
+                std::cout << "Only first value of '" << CNS_TAG_HEIGHT << "' = " << height << " will be used."
                           << std::endl;
             } else {
                 if (!((stream >> height) && (height > 0))) {
                     std::cout << "Warning! Invalid value of '" << CNS_TAG_HEIGHT
                               << "' tag encountered (or could not convert to integer)." << std::endl;
-                    std::cout << "Value of '" << CNS_TAG_HEIGHT << "' tag should be an integer >=0" << std::endl;
+                    std::cout << "Value of '" << CNS_TAG_HEIGHT << "' tag should be an integer >= 0" << std::endl;
                     std::cout << "Continue reading XML and hope correct value of '" << CNS_TAG_HEIGHT
                               << "' tag will be encountered later..." << std::endl;
                 } else
@@ -102,7 +102,7 @@ bool Map::getMap(const char *FileName) {
         } else if (value == CNS_TAG_WIDTH) {
             if (hasWidth) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_WIDTH << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_WIDTH << "' =" << width << "will be used." << std::endl;
+                std::cout << "Only first value of '" << CNS_TAG_WIDTH << "' = " << width << " will be used." << std::endl;
             } else {
                 if (!((stream >> width) && (width > 0))) {
                     std::cout << "Warning! Invalid value of '" << CNS_TAG_WIDTH
@@ -127,15 +127,15 @@ bool Map::getMap(const char *FileName) {
             }
             if (hasRadius) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_RADIUS << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_RADIUS << "' =" << agent_radius_in_cells
-                          << "will be used."
+                std::cout << "Only first value of '" << CNS_TAG_RADIUS << "' = " << agent_radius_in_cells
+                          << " will be used."
                           << std::endl;
             } else if (!(stream >> agent_radius_in_cells && agent_radius_in_cells >= 0 &&
                          agent_radius_in_cells < std::min(width, height) / 2)) {
                 std::cout << "Warning! Invalid value of '" << CNS_TAG_RADIUS
                           << "' tag encountered (or could not convert to integer)" << std::endl;
-                std::cout << "Value of '" << CNS_TAG_RADIUS << "' tag should be an integer AND >=0 AND < min('"
-                          << CNS_TAG_WIDTH << "', '" << CNS_TAG_HEIGHT << "') / 2 value, which is "
+                std::cout << "Value of '" << CNS_TAG_RADIUS << "' tag should be an integer >=0 AND < min('"
+                          << CNS_TAG_WIDTH << "', '" << CNS_TAG_HEIGHT << "') / 2 = "
                           << std::min(width, height) / 2 << std::endl;
                 std::cout << "Continue reading XML and hope correct value of '" << CNS_TAG_RADIUS
                           << "' tag will be encountered later..." << std::endl;
@@ -145,7 +145,7 @@ bool Map::getMap(const char *FileName) {
         } else if (value == CNS_TAG_CELLSIZE) {
             if (hasCellSize) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_CELLSIZE << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_CELLSIZE << "' =" << cellSize << "will be used."
+                std::cout << "Only first value of '" << CNS_TAG_CELLSIZE << "' = " << cellSize << " will be used."
                           << std::endl;
             } else {
                 if (!((stream >> cellSize) && (cellSize > 0))) {
@@ -167,7 +167,7 @@ bool Map::getMap(const char *FileName) {
 
             if (hasSTX) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_STX << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_STX << "' =" << start_j << "will be used." << std::endl;
+                std::cout << "Only first value of '" << CNS_TAG_STX << "' = " << start_j << " will be used." << std::endl;
             } else {
                 if (!(stream >> start_j && start_j >= 0 && start_j < width)) {
                     std::cout << "Warning! Invalid value of '" << CNS_TAG_STX
@@ -188,7 +188,7 @@ bool Map::getMap(const char *FileName) {
 
             if (hasSTY) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_STY << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_STY << "' =" << start_i << "will be used." << std::endl;
+                std::cout << "Only first value of '" << CNS_TAG_STY << "' = " << start_i << " will be used." << std::endl;
             } else {
                 if (!(stream >> start_i && start_i >= 0 && start_i < height)) {
                     std::cout << "Warning! Invalid value of '" << CNS_TAG_STY
@@ -209,7 +209,7 @@ bool Map::getMap(const char *FileName) {
 
             if (hasFINX) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_FINX << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_FINX << "' =" << goal_j << "will be used." << std::endl;
+                std::cout << "Only first value of '" << CNS_TAG_FINX << "' = " << goal_j << " will be used." << std::endl;
             } else {
                 if (!(stream >> goal_j && goal_j >= 0 && goal_j < width)) {
                     std::cout << "Warning! Invalid value of '" << CNS_TAG_FINX
@@ -230,7 +230,7 @@ bool Map::getMap(const char *FileName) {
 
             if (hasFINY) {
                 std::cout << "Warning! Duplicate '" << CNS_TAG_FINY << "' encountered." << std::endl;
-                std::cout << "Only first value of '" << CNS_TAG_FINY << "' =" << goal_i << "will be used." << std::endl;
+                std::cout << "Only first value of '" << CNS_TAG_FINY << "' = " << goal_i << " will be used." << std::endl;
             } else {
                 if (!(stream >> goal_i && goal_i >= 0 && goal_i < height)) {
                     std::cout << "Warning! Invalid value of '" << CNS_TAG_FINY
@@ -255,7 +255,7 @@ bool Map::getMap(const char *FileName) {
                     std::cout << "Error! Not enough '" << CNS_TAG_ROW << "' tags inside '" << CNS_TAG_GRID << "' tag."
                               << std::endl;
                     std::cout << "Number of '" << CNS_TAG_ROW
-                              << "' tags should be equal (or greater) than the value of '" << CNS_TAG_HEIGHT
+                              << "' tags should be equal (or greater than) to the value of '" << CNS_TAG_HEIGHT
                               << "' tag which is " << height << std::endl;
                     return false;
                 }
@@ -298,13 +298,13 @@ bool Map::getMap(const char *FileName) {
         return false;
 
     if (Grid[start_i][start_j] != CN_GC_NOOBS) {
-        std::cout << "Error! Start cell is not traversable (cell's value is" << Grid[start_i][start_j] << ")!"
+        std::cout << "Error! Start cell is not traversable (cell's value is " << Grid[start_i][start_j] << ")!"
                   << std::endl;
         return false;
     }
 
     if (Grid[goal_i][goal_j] != CN_GC_NOOBS) {
-        std::cout << "Error! Goal cell is not traversable (cell's value is" << Grid[goal_i][goal_j] << ")!"
+        std::cout << "Error! Goal cell is not traversable (cell's value is " << Grid[goal_i][goal_j] << ")!"
                   << std::endl;
         return false;
     }
